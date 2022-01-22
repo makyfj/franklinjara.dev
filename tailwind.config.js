@@ -7,5 +7,9 @@ module.exports = {
     fontFamily: ["Inter", ...defaultTheme.fontFamily.sans],
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms")({
+      strategy: "class",
+    }),
+  ],
 };

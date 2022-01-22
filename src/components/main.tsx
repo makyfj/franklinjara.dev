@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import Socials from "./socials";
-import ContactForm from "./contactForm.tsx";
+import ContactForm from "./contactForm";
 
 const Main = () => {
   return (
@@ -22,8 +22,8 @@ const Main = () => {
           yesterday to become a great software engineer and human being.
         </p>
         <Socials />
-        <ContactForm />
       </div>
+      <ContactForm />
     </>
   );
 };
