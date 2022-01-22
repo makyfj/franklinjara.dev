@@ -3,7 +3,7 @@ import { useRouter } from "next/router"
 
 interface Inputs {
   email: string
-  description: string
+  message: string
 }
 
 const ContactForm = () => {
@@ -19,7 +19,7 @@ const ContactForm = () => {
     const res = await fetch("/api/contact-form", {
       body: JSON.stringify({
         email: data.email,
-        description: data.description,
+        description: data.message,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -31,13 +31,12 @@ const ContactForm = () => {
 
     if (result) {
       router.push("/success-email")
-    } else {
     }
   }
 
   return (
     <>
-      <h1 className="text-center text-xl">Contact Me</h1>
+      <h1 className="text-center text-xl mb-8">Contact Me</h1>
       <div className="mx-2 my-2 text-center rounded mx-auto max-w-sm bg-slate-200 dark:bg-slate-800 border-2 border-slate-600 dark:border-slate-300 shadow-md shadow-slate-700 dark:shadow-slate-500">
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -54,18 +53,18 @@ const ContactForm = () => {
             <span className="error-form">{errors.email.message}</span>
           )}
 
-          <label htmlFor="description">Description</label>
+          <label htmlFor="message">Message</label>
           <textarea
-            id="description"
+            id="message"
             cols={20}
             rows={4}
-            {...register("description", {
-              required: "The description field is required",
+            {...register("message", {
+              required: "The message field is required",
             })}
             className="form-textarea field-form"
           />
-          {errors.description && (
-            <span className="error-form">{errors.description.message}</span>
+          {errors.message && (
+            <span className="error-form">{errors.message.message}</span>
           )}
 
           <div className="flex justify-center mt-1">

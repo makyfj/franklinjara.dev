@@ -2,12 +2,12 @@ import {
   BsGithub,
   BsLinkedin,
   BsFillFileTextFill as Resume,
-} from "react-icons/bs";
+} from "react-icons/bs"
 
 const Socials = () => {
   return (
     <>
-      <div className="flex justify-center gap-4 text-2xl">
+      <div className="flex justify-center my-2 text-2xl gap-4">
         <a href="https://www.github.com/makyfj">
           <BsGithub className="social-hover" />
         </a>
@@ -19,7 +19,7 @@ const Socials = () => {
         </a>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Socials;
+export default Socials
