@@ -1,10 +1,8 @@
 const Footer = () => {
   return (
-    <footer>
-      <ul>
-        <li>Source Code</li>
-        <li>Copyright © Franklin Jara</li>
-      </ul>
+    <footer className="flex flex-col items-center gap-4 pt-2">
+      <p>Source Code</p>
+      <p>Copyright © Franklin Jara</p>
     </footer>
   );
 };

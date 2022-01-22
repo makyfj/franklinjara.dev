@@ -13,7 +13,22 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data);
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
+    const res = await fetch("/api/contact-form", {
+      body: JSON.stringify({
+        name: data.name,
+        email: data.email,
+        description: data.description,
+      }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      method: "POST",
+    });
+
+    const result = await res.json();
+    console.log(result);
+  };
 
   return (
     <div className="bg-blue-400 sm:mx-auto sm:max-w-lg rounded mx-2 my-2 text-center">
