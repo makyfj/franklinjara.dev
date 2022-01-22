@@ -1,19 +1,19 @@
-import { useForm, SubmitHandler } from "react-hook-form";
-import { useRouter } from "next/router";
+import { useForm, SubmitHandler } from "react-hook-form"
+import { useRouter } from "next/router"
 
 interface Inputs {
-  email: string;
-  description: string;
+  email: string
+  description: string
 }
 
 const ContactForm = () => {
-  const router = useRouter();
+  const router = useRouter()
 
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm<Inputs>();
+  } = useForm<Inputs>()
 
   const onSubmit: SubmitHandler<Inputs> = async (data) => {
     const res = await fetch("/api/contact-form", {
@@ -25,15 +25,15 @@ const ContactForm = () => {
         "Content-Type": "application/json",
       },
       method: "POST",
-    });
+    })
 
-    const result = await res.json();
+    const result = await res.json()
 
     if (result) {
-      router.push("/success-email");
+      router.push("/success-email")
     } else {
     }
-  };
+  }
 
   return (
     <>
@@ -76,7 +76,7 @@ const ContactForm = () => {
         </form>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm
