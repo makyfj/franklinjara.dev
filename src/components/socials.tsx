@@ -11,7 +11,7 @@ const Socials = () => {
         <a href="https://www.github.com/makyfj">
           <BsGithub className="social-hover" />
         </a>
-        <a href="https://www.linkedin.com/in/franklinjara-fj">
+        <a href="https://www.linkedin.com/in/franklin-jara-fj">
           <BsLinkedin className="social-hover" />
         </a>
         <a href="files/FranklinJaraResume.pdf">
