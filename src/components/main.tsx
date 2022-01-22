@@ -14,8 +14,8 @@ const Main = () => {
           height={200}
           className="rounded-full"
         />
-        <h1 className="text-center">Franklin Jara</h1>
-        <p className="text-center w-4/5">
+        <h1 className="text-center text-2xl">Franklin Jara</h1>
+        <p className="text-center w-4/5 md:w-3/5 lg:w-2/5">
           Student @ Adelphi University pursuing a Master{`'`}s Degree in
           Computer Science with specialization in Software Engineering. I enjoy
           coding, working out and techno. Always pushing myself harder than

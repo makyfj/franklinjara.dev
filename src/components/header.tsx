@@ -22,29 +22,29 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="flex justify-center gap-10 py-5 bg-blue-400 py-10">
+    <header className="flex justify-center gap-10 py-5 py-10">
       <Link href="/">
         <a>
-          <FcHome className="w-5 h-5" />
+          <FcHome className="icon-size" />
         </a>
       </Link>
 
       <Link href="/">
-        <a>Experience</a>
+        <a className="heading">Experience</a>
       </Link>
       <Link href="/">
-        <a>Projects</a>
+        <a className="heading">Projects</a>
       </Link>
       <Link href="/">
-        <a>Blog</a>
+        <a className="heading">Blog</a>
       </Link>
       {theme === "dark" ? (
         <button onClick={toggleTheme}>
-          <Moon className="w-5 h-5" />
+          <Moon className="theme-mode" />
         </button>
       ) : (
         <button onClick={toggleTheme}>
-          <Sun className="w-5 h-5" />
+          <Sun className="theme-mode" />
         </button>
       )}
     </header>

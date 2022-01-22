@@ -1,9 +1,5 @@
 import { useForm, SubmitHandler } from "react-hook-form";
-import { toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/router";
-
-import Notification from "./notification";
 
 interface Inputs {
   email: string;
@@ -34,57 +30,47 @@ const ContactForm = () => {
     const result = await res.json();
 
     if (result) {
-      toast.success("Thanks, I'll contact you :)", {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
-
       router.push("/success-email");
     } else {
-      toast.error("Ops, try again :)", {
-        position: "top-center",
-        autoClose: 5000,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-      });
     }
   };
 
   return (
-    <div className="bg-blue-400 sm:mx-auto sm:max-w-sm rounded mx-2 my-2 text-center">
+    <div className="mx-2 my-2 text-center rounded mx-auto max-w-sm bg-slate-200 dark:bg-slate-800 border-2 border-slate-600 dark:border-slate-300 shadow-md shadow-slate-700 dark:shadow-slate-500">
+      <h2 className="text-lg pt-2">Contact Form</h2>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="grid grid-cols-1 gap-2 p-4"
+        className="p-4 grid grid-cols-1 gap-2"
       >
         <label htmlFor="email">Email</label>
         <input
           type="email"
-          {...register("email", { required: true })}
-          className="form-input"
+          id="email"
+          {...register("email", { required: "The email field is required" })}
+          className="form-input field-form"
         />
-        {errors.email && <span>This field is required</span>}
+        {errors.email && (
+          <span className="error-form">{errors.email.message}</span>
+        )}
+
         <label htmlFor="description">Description</label>
         <textarea
           id="description"
           cols={20}
           rows={4}
-          {...register("description")}
-          className="form-textarea"
+          {...register("description", {
+            required: "The description field is required",
+          })}
+          className="form-textarea field-form"
         />
+        {errors.description && (
+          <span className="error-form">{errors.description.message}</span>
+        )}
 
-        <div className="flex justify-center">
-          <button type="submit" className="p-1 rounded bg-red-400">
+        <div className="flex justify-center mt-1">
+          <button type="submit" className="p-1 rounded button">
             Submit
           </button>
-          <Notification />
         </div>
       </form>
     </div>

@@ -3,3 +3,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-gradient-to-tl from-slate-100 to-slate-500 dark:from-slate-900 dark:to-slate-600 text-slate-900 dark:text-slate-200;
+}
+
+/* Using this css format because tailwindcss was throwing String.prototype.bold = undefined or null if font-bold was being used*/
+h1,
+h2,
+label,
+button,
+a {
+  font-weight: bold;
+}
+
+@layer components {
+  .hover-heading {
+    @apply hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-pink-600 to-violet-700;
+  }
+
+  .heading {
+    @apply text-2xl hover-heading;
+  }
+
+  .icon-size {
+    @apply w-8 h-8;
+  }
+
+  .theme-mode {
+    @apply text-yellow-300 dark:text-slate-400 icon-size;
+  }
+
+  .social-hover {
+    @apply hover:text-sky-500;
+  }
+
+  .error-form {
+    @apply text-red-400 text-center;
+  }
+
+  .field-form {
+    @apply rounded bg-slate-300 dark:bg-slate-700 text-slate-800 dark:text-slate-200 border-2 border-solid focus:border-slate-200 focus:ring focus:ring-slate-700 dark:focus:ring-slate-200;
+  }
+
+  .button {
+    @apply text-lg border-2 border-slate-500 bg-slate-800 bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-violet-700 focus:ring focus:ring-slate-700 dark:focus:ring-slate-200;
+  }
+}
