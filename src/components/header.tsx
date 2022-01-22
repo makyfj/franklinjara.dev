@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { BsFillMoonFill as Moon, BsFillSunFill as Sun } from "react-icons/bs";
-import { FaHome } from "react-icons/fa";
+import { FcHome } from "react-icons/fc";
 
 const Header = () => {
   const [mounted, setMounted] = useState<boolean>(false);
@@ -22,10 +22,10 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="flex justify-center gap-10 py-5 bg-blue-400">
+    <header className="flex justify-center gap-10 py-5 bg-blue-400 py-10">
       <Link href="/">
         <a>
-          <FaHome className="w-5 h-5" />
+          <FcHome className="w-5 h-5" />
         </a>
       </Link>
 

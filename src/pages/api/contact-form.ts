@@ -4,7 +4,6 @@ import nodemailer from "nodemailer";
 import { GMAIL_USER, GMAIL_PASS } from "@/constants/api";
 
 interface Data {
-  name: string;
   email: string;
   description: string;
 }
@@ -35,7 +34,7 @@ export default function contactForm(
     to: `${process.env.GMAIL_USER}`,
     subject: `New email from ${email}`,
     text: `
-    ${name} wrote:
+    ${email} wrote:
     ${description}
     `,
   };
@@ -48,5 +47,5 @@ export default function contactForm(
     }
   });
 
-  res.json({ name, email, description });
+  res.json({ email, description });
 }
