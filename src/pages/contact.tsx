@@ -1,7 +1,16 @@
-import ContactForm from "@/components/contactForm";
+import Head from "next/head"
+
+import ContactForm from "@/components/contact-form"
 
 const Contact = () => {
-  return <ContactForm />;
-};
+  return (
+    <>
+      <Head>
+        <title>Maky | Contact</title>
+      </Head>
+      <ContactForm />
+    </>
+  )
+}
 
-export default Contact;
+export default Contact

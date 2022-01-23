@@ -29,7 +29,7 @@ import {
   SiEslint,
 } from "react-icons/si"
 
-import ToolkitItem from "./toolkitItem"
+import ToolkitItem from "./toolkit-item"
 
 const Toolkit = () => {
   return (

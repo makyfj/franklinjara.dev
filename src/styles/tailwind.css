@@ -23,7 +23,7 @@ a {
   }
 
   .heading {
-    @apply text-2xl hover-heading;
+    @apply text-lg sm:text-2xl hover-heading;
   }
 
   .icon-size {

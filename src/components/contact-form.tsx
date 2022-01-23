@@ -1,5 +1,6 @@
 import { useForm, SubmitHandler } from "react-hook-form"
 import { useRouter } from "next/router"
+import { FcSms, FcBusinessman } from "react-icons/fc"
 
 interface Inputs {
   email: string
@@ -36,7 +37,18 @@ const ContactForm = () => {
 
   return (
     <>
-      <h1 className="text-center text-xl mb-8">Contact Me</h1>
+      <div className="flex justify-center items-center">
+        <h1 className="text-lg sm:text-xl">Let{`'`}s chat about it!</h1>
+        <span className="text-center">
+          <FcSms className="h-6 w-6" />
+        </span>
+      </div>
+      <div className="flex justify-center items-center">
+        <p className="text-center">Send me an email using the form below </p>
+        <span>
+          <FcBusinessman className="h-6 w-6" />
+        </span>
+      </div>
       <div className="mx-2 my-2 text-center rounded mx-auto max-w-sm bg-slate-200 dark:bg-slate-800 border-2 border-slate-600 dark:border-slate-300 shadow-md shadow-slate-700 dark:shadow-slate-500">
         <form
           onSubmit={handleSubmit(onSubmit)}
