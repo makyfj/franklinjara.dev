@@ -46,7 +46,7 @@ const Toolkit = () => {
         sneak into the codebase and creates a quick feedback loop to fix all the
         little bugs as you write and refactor new code.
       </p>
-      <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 max-w-sm sm:max-w-lg mx-auto bg-slate-700 dark:bg-slate-300 text-slate-300 dark:text-slate-700 p-2 rounded shadow shadow-xl">
+      <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 max-w-sm sm:max-w-lg mx-auto bg-slate-200 dark:bg-slate-700 text-slate-700 dark:text-slate-200 p-3 rounded shadow shadow-xl">
         <ToolkitItem name="NextJS" icon={SiNextdotjs} />
         <ToolkitItem name="Neovim" icon={SiNeovim} />
         <ToolkitItem name="TypeScript" icon={SiTypescript} />

@@ -65,10 +65,10 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         </a>
       </Link>
 
-      <Link href="/">
+      <Link href="/experience">
         <a className="heading">Experience</a>
       </Link>
-      <Link href="/">
+      <Link href="/projects">
         <a className="heading">Projects</a>
       </Link>
       <Link href="/contact">
