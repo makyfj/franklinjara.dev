@@ -55,7 +55,7 @@ const Contact = () => {
           </span>
         </div>
       </div>
-      <div className="mx-2 my-2 text-center rounded mx-auto max-w-sm bg-slate-200 dark:bg-slate-800 border-2 border-slate-600 dark:border-slate-300 shadow-md shadow-slate-700 dark:shadow-slate-500">
+      <div className="mx-2 my-2 text-center sm:mx-auto rounded sm:max-w-lg bg-slate-200 dark:bg-slate-800 border-2 border-slate-600 dark:border-slate-300 shadow-md shadow-slate-700 dark:shadow-slate-500">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="p-4 grid grid-cols-1 gap-2"
@@ -64,7 +64,9 @@ const Contact = () => {
           <input
             type="email"
             id="email"
-            {...register("email", { required: "The email field is required" })}
+            {...register("email", {
+              required: "The email field is required",
+            })}
             className="form-input field-form"
           />
           {errors.email && (

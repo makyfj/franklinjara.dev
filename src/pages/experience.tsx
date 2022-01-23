@@ -12,7 +12,7 @@ const Experience = () => {
         <h1 className="text-center">What do I do?</h1>
         <p>Information about my software engineer career</p>
       </div>
-      <div className="grid grid-cols-1 my-10 max-w-sm mx-auto">
+      <div className="grid grid-cols-1 my-10 max-w-lg mx-auto">
         <ExperienceItem
           title="Full Stack Developer"
           company="Cherry Hill Programs"
