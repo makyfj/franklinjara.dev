@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <>
       <Head>
-        <title>Maky | Home</title>
+        <title>Home | FJ</title>
       </Head>
       <div className="flex flex-col items-center gap-4 my-2">
         <Image

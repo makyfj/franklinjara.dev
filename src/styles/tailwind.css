@@ -14,6 +14,7 @@ h2,
 h3,
 label,
 button,
+footer,
 a {
   font-weight: bold;
 }
@@ -40,14 +41,14 @@ a {
   }
 
   .error-form {
-    @apply text-red-400 text-center;
+    @apply text-center text-red-400;
   }
 
   .field-form {
-    @apply rounded bg-slate-300 dark:bg-slate-700 text-slate-800 dark:text-slate-200 border-2 border-solid focus:border-slate-200 focus:ring focus:ring-slate-700 dark:focus:ring-slate-200;
+    @apply border-2 border-solid rounded bg-slate-300 dark:bg-slate-700 text-slate-800 dark:text-slate-200 focus:border-slate-200 focus:ring focus:ring-slate-700 dark:focus:ring-slate-200;
   }
 
   .button {
-    @apply text-lg border-2 border-slate-500 bg-slate-800 bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-violet-700 focus:ring focus:ring-slate-700 dark:focus:ring-slate-200;
+    @apply text-lg text-transparent border-2 border-slate-500 bg-slate-800 bg-clip-text bg-gradient-to-r from-pink-600 to-violet-700 focus:ring focus:ring-slate-700 dark:focus:ring-slate-200;
   }
 }

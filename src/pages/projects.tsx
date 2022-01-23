@@ -1,4 +1,5 @@
 import { GetStaticProps } from "next"
+import Head from "next/head"
 
 import {
   PinnedRepositories,
@@ -15,6 +16,9 @@ const Projects = ({ pinnedRepositories }: ProjectsProps) => {
     useGitHubPinnedRepositories("makyf")
   return (
     <>
+      <Head>
+        <title>Projects | FJ</title>
+      </Head>
       <h1 className="text-center text-lg sm:text-xl mb-4">
         Did you say side projects?
       </h1>
