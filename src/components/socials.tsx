@@ -3,11 +3,20 @@ import {
   BsLinkedin,
   BsFillFileTextFill as Resume,
 } from "react-icons/bs"
+import { motion } from "framer-motion"
+
+import { itemVariants } from "@/utils/animation"
 
 const Socials = () => {
   return (
     <>
-      <div className="flex justify-center text-2xl gap-4">
+      <motion.div
+        variants={itemVariants}
+        initial="hidden"
+        animate="visible"
+        custom={1 * 0.3}
+        className="flex justify-center gap-4"
+      >
         <a href="https://www.github.com/makyfj">
           <BsGithub className="social-hover" />
         </a>
@@ -17,7 +26,7 @@ const Socials = () => {
         <a href="files/FranklinJaraResume.pdf">
           <Resume className="social-hover" />
         </a>
-      </div>
+      </motion.div>
     </>
   )
 }

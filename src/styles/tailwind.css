@@ -20,16 +20,20 @@ a {
 }
 
 @layer components {
+  .list {
+    @apply list-none;
+  }
+
   .hover-heading {
     @apply hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-pink-600 to-violet-700;
   }
 
   .heading {
-    @apply text-lg sm:text-2xl hover-heading;
+    @apply text-lg  hover-heading;
   }
 
   .icon-size {
-    @apply w-8 h-8;
+    @apply w-7 h-7;
   }
 
   .theme-mode {
@@ -37,7 +41,7 @@ a {
   }
 
   .social-hover {
-    @apply hover:text-sky-500;
+    @apply hover:text-sky-500 w-6 h-6;
   }
 
   .error-form {

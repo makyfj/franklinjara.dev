@@ -2,6 +2,9 @@ import Head from "next/head"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { useRouter } from "next/router"
 import { FcSms, FcBusinessman } from "react-icons/fc"
+import { motion } from "framer-motion"
+
+import { itemVariants } from "@/utils/animation"
 
 interface Inputs {
   email: string
@@ -41,9 +44,15 @@ const Contact = () => {
       <Head>
         <title>Contact | FJ</title>
       </Head>
-      <div className="mb-8">
+      <motion.div
+        variants={itemVariants}
+        initial="hidden"
+        animate="visible"
+        custom={1 * 0.2}
+        className="mb-8"
+      >
         <div className="flex justify-center items-center">
-          <h1 className="text-lg sm:text-xl">Let{`'`}s chat about it!</h1>
+          <h1 className="text-lg">Let{`'`}s chat about it!</h1>
           <span className="text-center">
             <FcSms className="h-6 w-6" />
           </span>
@@ -54,8 +63,14 @@ const Contact = () => {
             <FcBusinessman className="h-6 w-6" />
           </span>
         </div>
-      </div>
-      <div className="mx-2 my-2 text-center sm:mx-auto rounded sm:max-w-lg bg-slate-300 dark:bg-slate-700 shadow-xl">
+      </motion.div>
+      <motion.div
+        variants={itemVariants}
+        initial="hidden"
+        animate="visible"
+        custom={1 * 0.4}
+        className="mx-2 my-2 text-center sm:mx-auto rounded sm:max-w-lg bg-slate-300 dark:bg-slate-700 shadow-xl"
+      >
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="p-4 grid grid-cols-1 gap-2"
@@ -93,7 +108,7 @@ const Contact = () => {
             </button>
           </div>
         </form>
-      </div>
+      </motion.div>
     </>
   )
 }

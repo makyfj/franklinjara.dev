@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Head from "next/head"
+import { motion } from "framer-motion"
 
+import { itemVariants } from "@/utils/animation"
 import Socials from "./socials"
 import Toolkit from "./toolkit"
 
@@ -11,22 +13,35 @@ const Main = () => {
         <title>Home | FJ</title>
       </Head>
       <div className="flex flex-col items-center gap-4 my-2">
-        <Image
-          src="/images/profile.jpeg"
-          alt="Profile image"
-          width={200}
-          height={200}
-          className="rounded-full"
-        />
-        <h1 className="text-center text-2xl">Franklin</h1>
+        <motion.div
+          variants={itemVariants}
+          initial="hidden"
+          animate="visible"
+          custom={1 * 0.2}
+        >
+          <Image
+            src="/images/profile.jpeg"
+            alt="Profile image"
+            width={200}
+            height={200}
+            className="rounded-full"
+          />
+          <h1 className="text-center text-lg">Franklin</h1>
+        </motion.div>
 
         <Socials />
-        <p className="text-center max-w-sm sm:max-w-xl my-2 mx-2">
+        <motion.p
+          variants={itemVariants}
+          initial="hidden"
+          animate="visible"
+          custom={1 * 0.4}
+          className="text-center max-w-sm sm:max-w-xl my-2 mx-2"
+        >
           Student @ Adelphi University pursuing a Master{`'`}s Degree in
           Computer Science with specialization in Software Engineering. I enjoy
           coding, working out and techno. Always pushing myself harder than
           yesterday to become a great software engineer and human being.
-        </p>
+        </motion.p>
         <Toolkit />
       </div>
     </>

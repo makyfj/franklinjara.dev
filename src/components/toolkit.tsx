@@ -28,54 +28,74 @@ import {
   SiGit,
   SiEslint,
 } from "react-icons/si"
+import { motion } from "framer-motion"
 
+import { itemVariants } from "@/utils/animation"
 import ToolkitItem from "./toolkit-item"
 
 const Toolkit = () => {
   return (
     <>
-      <div className="flex gap-1">
+      <motion.div
+        variants={itemVariants}
+        initial="hidden"
+        animate="visible"
+        custom={1 * 0.5}
+        className="flex gap-1"
+      >
         <h2 className="text-2xl text-center">Toolkit</h2>
         <FcSettings className="icon-size" />
         <FcSupport className="icon-size" />
-      </div>
-      <p className="text-center max-w-sm sm:max-w-xl mb-2 mx-2">
+      </motion.div>
+      <motion.p
+        variants={itemVariants}
+        initial="hidden"
+        animate="visible"
+        custom={1 * 0.6}
+        className="text-center max-w-sm sm:max-w-xl mb-2 mx-2"
+      >
         I use a variety of tools to get through all the obstacles as efficiently
         as possible. I really enjoy working with statically typed languages,
         especially TypeScript. This negates most of the silly bugs that could
         sneak into the codebase and creates a quick feedback loop to fix all the
         little bugs as you write and refactor new code.
-      </p>
-      <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 max-w-sm sm:max-w-lg mx-auto bg-slate-300 dark:bg-slate-700 text-slate-700 dark:text-slate-200 p-3 rounded shadow shadow-xl">
-        <ToolkitItem name="NextJS" icon={SiNextdotjs} />
-        <ToolkitItem name="Neovim" icon={SiNeovim} />
-        <ToolkitItem name="TypeScript" icon={SiTypescript} />
-        <ToolkitItem name="JavaScript" icon={SiJavascript} />
-        <ToolkitItem name="React" icon={SiReact} />
-        <ToolkitItem name="Prettier" icon={SiPrettier} />
-        <ToolkitItem name="HTML5" icon={SiHtml5} />
-        <ToolkitItem name="Tailwindcss" icon={SiTailwindcss} />
-        <ToolkitItem name="CSS3" icon={SiCss3} />
-        <ToolkitItem name="Vercel" icon={SiVercel} />
-        <ToolkitItem name="Python" icon={SiPython} />
+      </motion.p>
+      <motion.div
+        variants={itemVariants}
+        initial="hidden"
+        animate="visible"
+        custom={1 * 0.7}
+        className="grid grid-cols-3 sm:grid-cols-4 gap-4 max-w-sm sm:max-w-lg mx-auto bg-slate-300 dark:bg-slate-700 text-slate-700 dark:text-slate-200 p-3 rounded shadow shadow-xl"
+      >
+        <ToolkitItem id={1} name="NextJS" icon={SiNextdotjs} />
+        <ToolkitItem id={2} name="Neovim" icon={SiNeovim} />
+        <ToolkitItem id={3} name="TypeScript" icon={SiTypescript} />
+        <ToolkitItem id={4} name="JavaScript" icon={SiJavascript} />
+        <ToolkitItem id={5} name="React" icon={SiReact} />
+        <ToolkitItem id={6} name="Prettier" icon={SiPrettier} />
+        <ToolkitItem id={7} name="HTML5" icon={SiHtml5} />
+        <ToolkitItem id={8} name="Tailwindcss" icon={SiTailwindcss} />
+        <ToolkitItem id={9} name="CSS3" icon={SiCss3} />
+        <ToolkitItem id={10} name="Vercel" icon={SiVercel} />
+        <ToolkitItem id={11} name="Python" icon={SiPython} />
 
-        <ToolkitItem name="Git" icon={SiGit} />
-        <ToolkitItem name="SiGithub" icon={SiGithub} />
-        <ToolkitItem name="Apollo" icon={SiApollographql} />
-        <ToolkitItem name="GraphQL" icon={SiGraphql} />
-        <ToolkitItem name="NestJS" icon={SiNestjs} />
-        <ToolkitItem name="Java" icon={SiJava} />
-        <ToolkitItem name="C++" icon={SiCplusplus} />
-        <ToolkitItem name="Heroku" icon={SiHeroku} />
-        <ToolkitItem name="Redux" icon={SiRedux} />
-        <ToolkitItem name="Chakra" icon={SiChakraui} />
-        <ToolkitItem name="MongoDB" icon={SiMongodb} />
-        <ToolkitItem name="Express" icon={SiExpress} />
-        <ToolkitItem name="NodeJS" icon={SiNodedotjs} />
-        <ToolkitItem name="MySQL" icon={SiMysql} />
-        <ToolkitItem name="Eslint" icon={SiEslint} />
-        <ToolkitItem name="PostgreSQL" icon={SiPostgresql} />
-      </div>
+        <ToolkitItem id={12} name="Git" icon={SiGit} />
+        <ToolkitItem id={13} name="SiGithub" icon={SiGithub} />
+        <ToolkitItem id={14} name="Apollo" icon={SiApollographql} />
+        <ToolkitItem id={15} name="GraphQL" icon={SiGraphql} />
+        <ToolkitItem id={16} name="NestJS" icon={SiNestjs} />
+        <ToolkitItem id={17} name="Java" icon={SiJava} />
+        <ToolkitItem id={18} name="C++" icon={SiCplusplus} />
+        <ToolkitItem id={19} name="Heroku" icon={SiHeroku} />
+        <ToolkitItem id={20} name="Redux" icon={SiRedux} />
+        <ToolkitItem id={21} name="Chakra" icon={SiChakraui} />
+        <ToolkitItem id={22} name="MongoDB" icon={SiMongodb} />
+        <ToolkitItem id={23} name="Express" icon={SiExpress} />
+        <ToolkitItem id={24} name="NodeJS" icon={SiNodedotjs} />
+        <ToolkitItem id={25} name="MySQL" icon={SiMysql} />
+        <ToolkitItem id={26} name="Eslint" icon={SiEslint} />
+        <ToolkitItem id={27} name="PostgreSQL" icon={SiPostgresql} />
+      </motion.div>
     </>
   )
 }

@@ -2,6 +2,7 @@ import { AiFillStar, AiOutlineLink, AiFillGithub } from "react-icons/ai"
 import { motion } from "framer-motion"
 
 import { PinnedRepositories } from "@/hooks/useGitHub"
+import { itemVariants } from "@/utils/animation"
 
 interface ProjectItemProps {
   projectItems: PinnedRepositories[]
@@ -12,10 +13,13 @@ const ProjectItem = ({ projectItems }: ProjectItemProps) => {
     <div className="grid grid-cols-1 justify-center items-center gap-4 mx-auto max-w-sm sm:max-w-lg p-2">
       {projectItems.map((project, index) => (
         <motion.div
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
+          variants={itemVariants}
+          initial="hidden"
+          animate="visible"
           className="grid grid-cols-2 bg-slate-300 dark:bg-slate-700 shadow shadow-xl p-3 rounded justify-items-center"
           key={index}
+          exit="hidden"
+          custom={(index + 1) * 0.2}
         >
           <h2 className="text-lg">{project.repo}</h2>
           <p className="flex justify-center items-center gap-1">

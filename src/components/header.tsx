@@ -4,6 +4,9 @@ import Link from "next/link"
 import { BsFillMoonFill as Moon, BsFillSunFill as Sun } from "react-icons/bs"
 import { FcHome } from "react-icons/fc"
 import { GiHamburgerMenu as Hamburger } from "react-icons/gi"
+import { motion } from "framer-motion"
+
+import { iconVariants } from "@/utils/animation"
 
 const Header = () => {
   const [mounted, setMounted] = useState<boolean>(false)
@@ -59,32 +62,82 @@ interface NavLinksProps {
 const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
   return (
     <>
-      <Link href="/">
-        <a>
-          <FcHome className="icon-size" />
-        </a>
-      </Link>
+      <motion.li
+        key={1}
+        variants={iconVariants}
+        whileHover="whileHover"
+        whileTap="whileTap"
+        className="list"
+      >
+        <Link href="/">
+          <a>
+            <FcHome className="icon-size" />
+          </a>
+        </Link>
+      </motion.li>
 
-      <Link href="/experience">
-        <a className="heading">Experience</a>
-      </Link>
-      <Link href="/projects">
-        <a className="heading">Projects</a>
-      </Link>
-      <Link href="/contact">
-        <a className="heading">Contact</a>
-      </Link>
-      <Link href="/blog">
-        <a className="heading">Blog</a>
-      </Link>
+      <motion.li
+        key={2}
+        variants={iconVariants}
+        whileHover="whileHover"
+        className="list"
+      >
+        <Link href="/experience">
+          <a className="heading">Experience</a>
+        </Link>
+      </motion.li>
+
+      <motion.li
+        key={3}
+        variants={iconVariants}
+        whileHover="whileHover"
+        className="list"
+      >
+        <Link href="/projects">
+          <a className="heading">Projects</a>
+        </Link>
+      </motion.li>
+
+      <motion.li
+        key={4}
+        variants={iconVariants}
+        whileHover="whileHover"
+        className="list"
+      >
+        <Link href="/contact">
+          <a className="heading">Contact</a>
+        </Link>
+      </motion.li>
+
+      <motion.li
+        key={5}
+        variants={iconVariants}
+        whileHover="whileHover"
+        className="list"
+      >
+        <Link href="/blog">
+          <a className="heading">Blog</a>
+        </Link>
+      </motion.li>
+
       {theme === "dark" ? (
-        <button onClick={toggleTheme}>
+        <motion.button
+          key={6}
+          variants={iconVariants}
+          whileHover="whileHover"
+          onClick={toggleTheme}
+        >
           <Moon className="theme-mode" />
-        </button>
+        </motion.button>
       ) : (
-        <button onClick={toggleTheme}>
+        <motion.button
+          key={6}
+          variants={iconVariants}
+          whileHover="whileHover"
+          onClick={toggleTheme}
+        >
           <Sun className="theme-mode" />
-        </button>
+        </motion.button>
       )}
     </>
   )
