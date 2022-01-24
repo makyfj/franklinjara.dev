@@ -5,7 +5,7 @@ import {
 } from "react-icons/bs"
 import { motion } from "framer-motion"
 
-import { itemVariants } from "@/utils/animation"
+import { itemVariants, iconVariants } from "@/utils/animation"
 
 const Socials = () => {
   return (
@@ -17,15 +17,30 @@ const Socials = () => {
         custom={1 * 0.3}
         className="flex justify-center gap-4"
       >
-        <a href="https://www.github.com/makyfj">
+        <motion.a
+          variants={iconVariants}
+          whileHover="whileHover"
+          whileTap="whileTap"
+          href="https://www.github.com/makyfj"
+        >
           <BsGithub className="social-hover" />
-        </a>
-        <a href="https://www.linkedin.com/in/franklin-jara-fj">
+        </motion.a>
+        <motion.a
+          variants={iconVariants}
+          whileHover="whileHover"
+          whileTap="whileTap"
+          href="https://www.linkedin.com/in/franklin-jara-fj"
+        >
           <BsLinkedin className="social-hover" />
-        </a>
-        <a href="files/FranklinJaraResume.pdf">
+        </motion.a>
+        <motion.a
+          variants={iconVariants}
+          whileHover="whileHover"
+          whileTap="whileTap"
+          href="files/FranklinJaraResume.pdf"
+        >
           <Resume className="social-hover" />
-        </a>
+        </motion.a>
       </motion.div>
     </>
   )
