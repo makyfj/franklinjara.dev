@@ -55,7 +55,7 @@ const Contact = () => {
           </span>
         </div>
       </div>
-      <div className="mx-2 my-2 text-center sm:mx-auto rounded sm:max-w-lg bg-slate-200 dark:bg-slate-800 shadow-xl">
+      <div className="mx-2 my-2 text-center sm:mx-auto rounded sm:max-w-lg bg-slate-300 dark:bg-slate-700 shadow-xl">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="p-4 grid grid-cols-1 gap-2"
