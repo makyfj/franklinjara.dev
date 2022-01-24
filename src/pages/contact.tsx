@@ -3,6 +3,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
 import { useRouter } from "next/router"
 import { FcSms, FcBusinessman } from "react-icons/fc"
 import { motion } from "framer-motion"
+import { toast } from "react-hot-toast"
 
 import { itemVariants } from "@/utils/animation"
 
@@ -32,11 +33,14 @@ const Contact = () => {
       method: "POST",
     })
 
-    const result = await res.json()
-
-    if (result) {
-      router.push("/success-email")
-    }
+    await toast
+      .promise(res.json(), {
+        success: "Success!",
+        loading: "Sending...",
+        error: (error: Error) => error?.message ?? "Something went wrong...",
+      })
+      .then(async () => router.push("/success-email"))
+      .catch(() => null)
   }
 
   return (
