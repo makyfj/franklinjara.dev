@@ -7,7 +7,7 @@ import {
 const Socials = () => {
   return (
     <>
-      <div className="flex justify-center my-2 text-2xl gap-4">
+      <div className="flex justify-center text-2xl gap-4">
         <a href="https://www.github.com/makyfj">
           <BsGithub className="social-hover" />
         </a>

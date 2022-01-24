@@ -1,5 +1,6 @@
 import ExperienceItem from "@/components/experience-item"
 import Head from "next/head"
+import { FcBusinessman } from "react-icons/fc"
 
 const Experience = () => {
   return (
@@ -9,8 +10,17 @@ const Experience = () => {
       </Head>
 
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-center">What do I do?</h1>
-        <p>Information about my software engineer career</p>
+        <div className="flex justify-center items-center gap-1">
+          <h1 className="text-lg sm:text-xl">What do I do?</h1>
+          <FcBusinessman className="w-6 h-6" />
+        </div>
+        <span className="text-center max-w-sm sm:max-w-lg mt-2 mx-2">
+          I am driven by knowledge and passion. With a keen interest in Software
+          Engineering, I strive to gain more knowledge and abilities by
+          constantly challenging myself to learn new technologies and concepts
+          beyond my work though personal projects and self-learning. Outside of
+          work, I like to listen techno music and workout.
+        </span>
       </div>
       <div className="grid grid-cols-1 my-10 max-w-lg mx-auto">
         <ExperienceItem

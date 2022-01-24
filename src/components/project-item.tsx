@@ -1,3 +1,5 @@
+import { AiFillStar, AiOutlineLink, AiFillGithub } from "react-icons/ai"
+
 import { PinnedRepositories } from "@/hooks/useGitHub"
 
 interface ProjectItemProps {
@@ -9,18 +11,33 @@ const ProjectItem = ({ projectItems }: ProjectItemProps) => {
     <div className="grid grid-cols-1 justify-center items-center gap-4 mx-auto max-w-sm sm:max-w-lg p-2">
       {projectItems.map((project, index) => (
         <div
-          className="grid grid-cols-2 bg-slate-200 dark:bg-slate-700 shadow shadow-xl justify-items-center p-3 rounded"
+          className="grid grid-cols-2 bg-slate-200 dark:bg-slate-700 shadow shadow-xl p-3 rounded justify-items-center"
           key={index}
         >
-          <h2>{project.repo}</h2>
-          <p>{project.owner}</p>
-          <p>{project.description}</p>
-          <p>{project.language}</p>
-          <p>{project.languageColor}</p>
-          <p>{project.stars}</p>
-          <p>{project.forks}</p>
-          <p>Link</p>
-          <p>Website</p>
+          <h2 className="text-lg">{project.repo}</h2>
+          <p className="flex justify-center items-center gap-1">
+            {project.stars} <AiFillStar className="w-5 h-5 text-yellow-400" />
+          </p>
+          <p className="text-center my-2">{project.description}</p>
+          <div className="flex justify-center items-center">
+            <p className="">{project.language}</p>
+          </div>
+          <a
+            href={project.link}
+            className="flex justify-center items-center gap-1"
+          >
+            Source code
+            <AiFillGithub className="w-5 h-5 text-sky-400 hover:text-sky-600" />
+          </a>
+          {project.website && (
+            <a
+              href={project.website}
+              className="flex justify-center items-center gap-1"
+            >
+              Demo
+              <AiOutlineLink className="w-5 h-5 text-sky-400 hover:text-sky-600" />
+            </a>
+          )}
         </div>
       ))}
     </div>

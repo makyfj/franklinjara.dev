@@ -1,5 +1,6 @@
 import { GetStaticProps } from "next"
 import Head from "next/head"
+import { FcBusiness, FcSalesPerformance } from "react-icons/fc"
 
 import {
   PinnedRepositories,
@@ -19,9 +20,18 @@ const Projects = ({ pinnedRepositories }: ProjectsProps) => {
       <Head>
         <title>Projects | FJ</title>
       </Head>
-      <h1 className="text-center text-lg sm:text-xl mb-4">
-        Did you say side projects?
-      </h1>
+      <div className="flex justify-center gap-1">
+        <h1 className="text-lg sm:text-xl mb-4">Did you say side projects?</h1>
+        <FcBusiness className="h-7 w-7" />
+        <FcSalesPerformance className="h-7 w-7" />
+      </div>
+      <div className="flex justify-center max-w-lg mx-auto my-2">
+        <p className="text-center mx-2">
+          I am always learning new technologies and I enjoy creating and playing
+          with side projects to have a better understanding of each technology
+          that I am learning.
+        </p>
+      </div>
       <ProjectItem projectItems={projects} />
     </>
   )
@@ -37,6 +47,7 @@ export const getStaticProps: GetStaticProps<ProjectsProps> = async () => {
   return {
     props: {
       pinnedRepositories,
+      revalidate: 120,
     },
   }
 }
