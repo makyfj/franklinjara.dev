@@ -78,9 +78,8 @@ const Toolkit = () => {
         <ToolkitItem id={9} name="CSS3" icon={SiCss3} />
         <ToolkitItem id={10} name="Vercel" icon={SiVercel} />
         <ToolkitItem id={11} name="Python" icon={SiPython} />
-
         <ToolkitItem id={12} name="Git" icon={SiGit} />
-        <ToolkitItem id={13} name="SiGithub" icon={SiGithub} />
+        <ToolkitItem id={13} name="Github" icon={SiGithub} />
         <ToolkitItem id={14} name="Apollo" icon={SiApollographql} />
         <ToolkitItem id={15} name="GraphQL" icon={SiGraphql} />
         <ToolkitItem id={16} name="NestJS" icon={SiNestjs} />
