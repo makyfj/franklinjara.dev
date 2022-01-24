@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import { useTheme } from "next-themes"
 import Link from "next/link"
 import { BsFillMoonFill as Moon, BsFillSunFill as Sun } from "react-icons/bs"
-import { FcHome } from "react-icons/fc"
+import { FcHome, FcCommandLine, FcEngineering } from "react-icons/fc"
 import { GiHamburgerMenu as Hamburger } from "react-icons/gi"
 import { motion } from "framer-motion"
 
@@ -32,7 +32,7 @@ const Header = () => {
         <NavLinks theme={theme} toggleTheme={toggleTheme} />
       </div>
       <div className="p-4 space-y-2 m-1 sm:hidden text-md">
-        <div className="flex">
+        <div className="flex justify-between items-center">
           <motion.button
             variants={iconVariants}
             whileHover="whileHover"
@@ -42,9 +42,13 @@ const Header = () => {
           >
             <Hamburger className="icon-size" />
           </motion.button>
+          <div className="flex">
+            <FcCommandLine className="icon-size" />
+            <FcEngineering className="icon-size" />
+          </div>
         </div>
         <div
-          className={`flex flex-wrap gap-6 justify-center ${
+          className={`grid grid-cols-3 justify-items-center gap-6 justify-center ${
             menuMobile ? "visible" : "hidden"
           }`}
         >
