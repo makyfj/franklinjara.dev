@@ -74,7 +74,7 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
       <Link href="/contact">
         <a className="heading">Contact</a>
       </Link>
-      <Link href="/">
+      <Link href="/blog">
         <a className="heading">Blog</a>
       </Link>
       {theme === "dark" ? (
