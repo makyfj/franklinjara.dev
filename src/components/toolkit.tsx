@@ -43,7 +43,7 @@ const Toolkit = () => {
         custom={1 * 0.5}
         className="flex gap-1"
       >
-        <h2 className="text-2xl text-center">Toolkit</h2>
+        <h2 className="text-lg text-center">Toolkit</h2>
         <FcSettings className="icon-size" />
         <FcSupport className="icon-size" />
       </motion.div>
