@@ -1,4 +1,4 @@
-import { GetStaticProps } from "next"
+import { GetServerSideProps, InferGetServerSidePropsType } from "next"
 import Head from "next/head"
 import { FcBusiness, FcSalesPerformance } from "react-icons/fc"
 import { motion } from "framer-motion"
@@ -15,7 +15,9 @@ interface ProjectsProps {
   pinnedRepositories: PinnedRepositories[]
 }
 
-const Projects = ({ pinnedRepositories }: ProjectsProps) => {
+const Projects = ({
+  pinnedRepositories,
+}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const { data: projects = pinnedRepositories } =
     useGitHubPinnedRepositories("makyf")
   return (
@@ -49,7 +51,9 @@ const Projects = ({ pinnedRepositories }: ProjectsProps) => {
 
 export default Projects
 
-export const getStaticProps: GetStaticProps<ProjectsProps> = async () => {
+export const getServerSideProps: GetServerSideProps<ProjectsProps> = async (
+  context
+) => {
   const pinnedRepositories = await fetch(
     "https://gh-pinned-repos.egoist.sh/?username=makyfj"
   ).then(async (response) => response.json() as Promise<PinnedRepositories[]>)

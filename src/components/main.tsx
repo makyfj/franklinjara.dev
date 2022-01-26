@@ -11,6 +11,13 @@ const Main = () => {
     <>
       <Head>
         <title>Home | FJ</title>
+        <meta
+          name="description"
+          content="
+          Student @ Adelphi University pursuing a Master{`'`}s Degree in
+          Computer Science with specialization in Software Engineering. 
+        "
+        />
       </Head>
       <div className="flex flex-col items-center gap-4 my-2">
         <motion.div
