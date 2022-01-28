@@ -1,25 +1,25 @@
-import type { NextApiRequest, NextApiResponse } from "next";
-import nodemailer from "nodemailer";
+import type { NextApiRequest, NextApiResponse } from "next"
+import nodemailer from "nodemailer"
 
-import { GMAIL_USER, GMAIL_PASS } from "@/constants/api";
+import { GMAIL_USER, GMAIL_PASS } from "@/constants/api"
 
 interface Data {
-  email: string;
-  description: string;
+  email: string
+  description: string
 }
 
 interface MailOption {
-  from: string;
-  to: string;
-  subject: string;
-  text: string;
+  from: string
+  to: string
+  subject: string
+  text: string
 }
 
 export default function contactForm(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  const { name, email, description } = req.body;
+  const { email, description } = req.body
 
   const transporter = nodemailer.createTransport({
     service: "gmail",
@@ -27,7 +27,7 @@ export default function contactForm(
       user: GMAIL_USER,
       pass: GMAIL_PASS,
     },
-  });
+  })
 
   const mailOption: MailOption = {
     from: `${email}`,
@@ -37,15 +37,15 @@ export default function contactForm(
     ${email} wrote:
     ${description}
     `,
-  };
+  }
 
   transporter.sendMail(mailOption, (err, data) => {
     if (err) {
-      console.log(err);
+      console.log(err)
     } else {
-      console.log(`Mail send ${data}`);
+      console.log(`Mail send ${data}`)
     }
-  });
+  })
 
-  res.json({ email, description });
+  res.json({ email, description })
 }
