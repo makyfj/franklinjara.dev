@@ -12,13 +12,7 @@ const Experience = () => {
         <title>Experience | FJ</title>
       </Head>
 
-      <motion.div
-        variants={itemVariants}
-        initial="hidden"
-        animate="visible"
-        custom={1 * 0.2}
-        className="flex flex-col justify-center items-center"
-      >
+      <div className="flex flex-col justify-center items-center">
         <div className="flex justify-center items-center gap-1">
           <h1 className="text-lg">What do I do?</h1>
           <FcBusinessman className="w-6 h-6" />
@@ -30,7 +24,7 @@ const Experience = () => {
           beyond my work though personal projects and self-learning. Outside of
           work, I like to listen techno music and workout.
         </span>
-      </motion.div>
+      </div>
       <div className="grid grid-cols-1 my-10 max-w-lg mx-auto">
         <ExperienceItem
           id={1}

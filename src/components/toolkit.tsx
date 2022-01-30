@@ -28,45 +28,25 @@ import {
   SiGit,
   SiEslint,
 } from "react-icons/si"
-import { motion } from "framer-motion"
 
-import { itemVariants } from "@/utils/animation"
 import ToolkitItem from "./toolkit-item"
 
 const Toolkit = () => {
   return (
     <>
-      <motion.div
-        variants={itemVariants}
-        initial="hidden"
-        animate="visible"
-        custom={1 * 0.5}
-        className="flex gap-1"
-      >
+      <div className="flex gap-1">
         <h2 className="text-lg text-center">Toolkit</h2>
         <FcSettings className="icon-size" />
         <FcSupport className="icon-size" />
-      </motion.div>
-      <motion.p
-        variants={itemVariants}
-        initial="hidden"
-        animate="visible"
-        custom={1 * 0.6}
-        className="text-center max-w-sm sm:max-w-xl mb-2 mx-2"
-      >
+      </div>
+      <p className="text-center max-w-sm sm:max-w-xl mb-2 mx-2">
         I use a variety of tools to get through all the obstacles as efficiently
         as possible. I really enjoy working with statically typed languages,
         especially TypeScript. This negates most of the silly bugs that could
         sneak into the codebase and creates a quick feedback loop to fix all the
         little bugs as you write and refactor new code.
-      </motion.p>
-      <motion.div
-        variants={itemVariants}
-        initial="hidden"
-        animate="visible"
-        custom={1 * 0.7}
-        className="grid grid-cols-3 sm:grid-cols-4 gap-4 max-w-sm sm:max-w-lg mx-auto bg-slate-300 dark:bg-slate-700 text-slate-700 dark:text-slate-200 p-3 rounded shadow shadow-xl"
-      >
+      </p>
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 max-w-sm sm:max-w-lg mx-auto bg-slate-300 dark:bg-slate-700 text-slate-700 dark:text-slate-200 p-3 rounded shadow shadow-xl">
         <ToolkitItem id={1} name="NextJS" icon={SiNextdotjs} />
         <ToolkitItem id={2} name="Neovim" icon={SiNeovim} />
         <ToolkitItem id={3} name="TypeScript" icon={SiTypescript} />
@@ -94,7 +74,7 @@ const Toolkit = () => {
         <ToolkitItem id={25} name="MySQL" icon={SiMysql} />
         <ToolkitItem id={26} name="Eslint" icon={SiEslint} />
         <ToolkitItem id={27} name="PostgreSQL" icon={SiPostgresql} />
-      </motion.div>
+      </div>
     </>
   )
 }

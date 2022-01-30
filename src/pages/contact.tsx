@@ -2,10 +2,10 @@ import Head from "next/head"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { useRouter } from "next/router"
 import { FcSms, FcBusinessman } from "react-icons/fc"
-import { motion } from "framer-motion"
 import { toast } from "react-hot-toast"
+import { motion } from "framer-motion"
 
-import { itemVariants } from "@/utils/animation"
+import { iconVariants } from "@/utils/animation"
 
 interface Inputs {
   email: string
@@ -48,13 +48,7 @@ const Contact = () => {
       <Head>
         <title>Contact | FJ</title>
       </Head>
-      <motion.div
-        variants={itemVariants}
-        initial="hidden"
-        animate="visible"
-        custom={1 * 0.2}
-        className="mb-8"
-      >
+      <div className="mb-8">
         <div className="flex justify-center items-center">
           <h1 className="text-lg">Let{`'`}s chat about it!</h1>
           <span className="text-center">
@@ -67,14 +61,8 @@ const Contact = () => {
             <FcBusinessman className="h-6 w-6" />
           </span>
         </div>
-      </motion.div>
-      <motion.div
-        variants={itemVariants}
-        initial="hidden"
-        animate="visible"
-        custom={1 * 0.4}
-        className="mx-2 my-2 text-center sm:mx-auto rounded sm:max-w-lg bg-slate-300 dark:bg-slate-700 shadow-xl"
-      >
+      </div>
+      <div className="mx-2 my-2 text-center sm:mx-auto rounded sm:max-w-lg bg-slate-300 dark:bg-slate-700 shadow-xl">
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="p-4 grid grid-cols-1 gap-2"
@@ -107,12 +95,18 @@ const Contact = () => {
           )}
 
           <div className="flex justify-center mt-1">
-            <button type="submit" className="p-1 rounded button">
+            <motion.button
+              variants={iconVariants}
+              whileHover="whileHover"
+              whileTap="whileTap"
+              type="submit"
+              className="p-1 rounded button"
+            >
               Submit
-            </button>
+            </motion.button>
           </div>
         </form>
-      </motion.div>
+      </div>
     </>
   )
 }

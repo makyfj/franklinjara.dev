@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body {
-  @apply bg-gradient-to-l from-slate-100 to-slate-500 dark:from-slate-900 dark:to-slate-600 text-slate-700 dark:text-slate-200;
+  @apply bg-gradient-to-l from-slate-100 to-slate-300 dark:from-slate-700 dark:to-slate-900 text-slate-700 dark:text-slate-200;
 }
 
 /* Using this css format because tailwindcss was throwing String.prototype.bold = undefined or null if font-bold was being used*/

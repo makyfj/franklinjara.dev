@@ -5,18 +5,12 @@ import {
 } from "react-icons/bs"
 import { motion } from "framer-motion"
 
-import { itemVariants, iconVariants } from "@/utils/animation"
+import { iconVariants } from "@/utils/animation"
 
 const Socials = () => {
   return (
     <>
-      <motion.div
-        variants={itemVariants}
-        initial="hidden"
-        animate="visible"
-        custom={1 * 0.3}
-        className="flex justify-center gap-4"
-      >
+      <div className="flex justify-center gap-4">
         <motion.a
           variants={iconVariants}
           whileHover="whileHover"
@@ -41,7 +35,7 @@ const Socials = () => {
         >
           <Resume className="social-hover" />
         </motion.a>
-      </motion.div>
+      </div>
     </>
   )
 }
