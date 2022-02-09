@@ -1,8 +1,8 @@
-import type { AppProps } from "next/app";
-import { ThemeProvider } from "next-themes";
+import type { AppProps } from "next/app"
+import { ThemeProvider } from "next-themes"
 
-import Layout from "@/components/layout";
-import "@/styles/tailwind.css";
+import Layout from "@/components/layout"
+import "@/styles/tailwind.css"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <Component {...pageProps} />
       </Layout>
     </ThemeProvider>
-  );
+  )
 }
 
-export default MyApp;
+export default MyApp
