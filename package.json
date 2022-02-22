@@ -20,7 +20,7 @@
     "react-hook-form": "^7.27.0",
     "react-hot-toast": "^2.2.0",
     "react-icons": "^4.3.1",
-    "swr": "^1.2.1"
+    "swr": "^1.2.2"
   },
   "devDependencies": {
     "@types/node": "17.0.18",
