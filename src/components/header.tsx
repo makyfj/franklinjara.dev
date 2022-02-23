@@ -31,14 +31,14 @@ const Header = () => {
       <div className="hidden sm:visible sm:flex sm:justify-center sm:gap-10 sm:py-5 sm:py-10">
         <NavLinks theme={theme} toggleTheme={toggleTheme} />
       </div>
-      <div className="p-4 space-y-2 m-1 sm:hidden text-md">
-        <div className="flex justify-between items-center">
+      <div className="p-4 m-1 space-y-2 sm:hidden text-md">
+        <div className="flex items-center justify-between">
           <motion.button
             variants={iconVariants}
             whileHover="whileHover"
             whileTap="whileTap"
             onClick={() => setMenuMobile(!menuMobile)}
-            className="p-1 bg-slate-300 dark:bg-slate-700 hover:bg-slate-500 dark:hover:bg-slate-500 rounded"
+            className="p-1 rounded bg-slate-300 dark:bg-slate-700 hover:bg-slate-500 dark:hover:bg-slate-500"
           >
             <Hamburger className="icon-size" />
           </motion.button>
