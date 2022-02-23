@@ -37,7 +37,7 @@ a {
   }
 
   .theme-mode {
-    @apply text-yellow-300 dark:text-slate-400 icon-size;
+    @apply text-yellow-500 dark:text-slate-300 icon-size;
   }
 
   .social-hover {

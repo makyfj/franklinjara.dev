@@ -18,7 +18,7 @@ const ProjectItem = ({ projectItems }: ProjectItemProps) => {
         >
           <h2 className="text-lg">{project.repo}</h2>
           <p className="flex justify-center items-center gap-1">
-            {project.stars} <AiFillStar className="w-5 h-5 text-yellow-400" />
+            {project.stars} <AiFillStar className="w-5 h-5 text-yellow-500" />
           </p>
           <p className="text-center my-2">{project.description}</p>
           <div className="flex justify-center items-center">
