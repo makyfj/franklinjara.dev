@@ -1,4 +1,4 @@
-import { GetServerSideProps, InferGetServerSidePropsType } from "next"
+import { GetStaticProps, InferGetStaticPropsType } from "next"
 import Head from "next/head"
 import { FcBusiness, FcSalesPerformance } from "react-icons/fc"
 
@@ -14,7 +14,7 @@ interface ProjectsProps {
 
 const Projects = ({
   pinnedRepositories,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
   const { data: projects = pinnedRepositories } =
     useGitHubPinnedRepositories("makyfj")
   return (
@@ -41,7 +41,7 @@ const Projects = ({
 
 export default Projects
 
-export const getServerSideProps: GetServerSideProps<ProjectsProps> = async (
+export const getStaticProps: GetStaticProps<ProjectsProps> = async (
   context
 ) => {
   const pinnedRepositories = await fetch(
@@ -51,7 +51,6 @@ export const getServerSideProps: GetServerSideProps<ProjectsProps> = async (
   return {
     props: {
       pinnedRepositories,
-      revalidate: 120,
     },
   }
 }
