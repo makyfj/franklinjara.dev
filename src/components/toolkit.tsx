@@ -77,9 +77,9 @@ const Toolkit = () => {
         <ToolkitItem id={25} name="MySQL" icon={SiMysql} />
         <ToolkitItem id={26} name="Eslint" icon={SiEslint} />
         <ToolkitItem id={27} name="PostgreSQL" icon={SiPostgresql} />
-        <ToolkitItem id={27} name="DynamoDB" icon={SiAmazondynamodb} />
-        <ToolkitItem id={27} name="Amplify" icon={SiAwsamplify} />
-        <ToolkitItem id={27} name="Sass" icon={SiSass} />
+        <ToolkitItem id={28} name="DynamoDB" icon={SiAmazondynamodb} />
+        <ToolkitItem id={29} name="Amplify" icon={SiAwsamplify} />
+        <ToolkitItem id={30} name="Sass" icon={SiSass} />
       </div>
     </>
   )
