@@ -31,7 +31,7 @@ const Experience = () => {
           title="Full Stack Developer"
           company="Cherry Hill Programs"
           date="January 2022 - Present"
-          description="I work on the front end of the application, and the back end of the API. I work with React, Typescript, and Node.js."
+          description="I work on the front end of the application, and the back end of the API. I work with React, Typescript, and Node.js, GraphQL, AWS and Amplify."
         />
 
         <ExperienceItem
