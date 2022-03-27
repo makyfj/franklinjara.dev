@@ -25,7 +25,7 @@
   "devDependencies": {
     "@types/node": "17.0.22",
     "@types/nodemailer": "^6.4.4",
-    "@types/react": "17.0.42",
+    "@types/react": "17.0.43",
     "autoprefixer": "^10.4.4",
     "cypress": "^9.5.2",
     "eslint": "8.11.0",
