@@ -12,7 +12,7 @@ const Main = () => {
         <meta
           name="description"
           content="
-          Student @ Adelphi University pursuing a Master{`'`}s Degree in
+          Full Stack Developer @ Cherry Hill Programs and Student @ Adelphi University pursuing a Master{`'`}s Degree in
           Computer Science with specialization in Software Engineering. 
         "
         />
@@ -31,10 +31,11 @@ const Main = () => {
 
         <Socials />
         <p className="text-center max-w-sm sm:max-w-xl my-2 mx-2">
-          Student @ Adelphi University pursuing a Master{`'`}s Degree in
-          Computer Science with specialization in Software Engineering. I enjoy
-          coding, working out and techno. Always pushing myself harder than
-          yesterday to become a great software engineer and human being.
+          Full Stack Developer @ Cherry Hill Programs and Student @ Adelphi
+          University pursuing a Master{`'`}s Degree in Computer Science with
+          specialization in Software Engineering. I enjoy coding, working out
+          and techno. Always pushing myself harder than yesterday to become a
+          great software engineer and human being.
         </p>
         <Toolkit />
       </div>
