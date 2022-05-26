@@ -12,7 +12,7 @@ const Main = () => {
         <meta
           name="description"
           content="
-          Full Stack Developer @ Cherry Hill Programs and Student @ Adelphi University pursuing a Master{`'`}s Degree in
+          Franklin Jara is a Full Stack Developer @ Cherry Hill Programs and Student @ Adelphi University pursuing a Master{`'`}s Degree in
           Computer Science with specialization in Software Engineering. 
         "
         />
@@ -26,7 +26,7 @@ const Main = () => {
             height={200}
             className="rounded-full"
           />
-          <h1 className="text-center text-lg">Franklin</h1>
+          <h1 className="text-center text-lg">Franklin Jara</h1>
         </div>
 
         <Socials />
