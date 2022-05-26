@@ -16,6 +16,11 @@ const Main = () => {
           Computer Science with specialization in Software Engineering. 
         "
         />
+        <meta name="title" content="Franklin Jara" />
+        <meta
+          name="keywords"
+          content="Franklin, Jara, Software, Engineering, Full Stack Developer"
+        />
       </Head>
       <div className="flex flex-col items-center gap-4 my-2">
         <div>
