@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <>
       <Head>
-        <title>Home | FJ</title>
+        <title>Home | Franklin Jara</title>
         <meta
           name="description"
           content="

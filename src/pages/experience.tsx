@@ -6,7 +6,20 @@ const Experience = () => {
   return (
     <>
       <Head>
-        <title>Experience | FJ</title>
+        <title>Experience | Franklin Jara</title>
+
+        <meta
+          name="description"
+          content="
+          Franklin Jara is a Full Stack Developer @ Cherry Hill Programs and Student @ Adelphi University pursuing a Master{`'`}s Degree in
+          Computer Science with specialization in Software Engineering. 
+        "
+        />
+        <meta name="title" content="Experience | Franklin Jara" />
+        <meta
+          name="keywords"
+          content="Franklin, Jara, Software, Engineering, Full Stack Developer, Experience"
+        />
       </Head>
 
       <div className="flex flex-col justify-center items-center">

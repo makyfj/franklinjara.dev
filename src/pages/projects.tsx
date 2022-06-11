@@ -20,7 +20,20 @@ const Projects = ({
   return (
     <>
       <Head>
-        <title>Projects | FJ</title>
+        <title>Projects | Franklin Jara</title>
+
+        <meta
+          name="description"
+          content="
+          Franklin Jara is a Full Stack Developer @ Cherry Hill Programs and Student @ Adelphi University pursuing a Master{`'`}s Degree in
+          Computer Science with specialization in Software Engineering. 
+        "
+        />
+        <meta name="title" content="Franklin Jara | Projects" />
+        <meta
+          name="keywords"
+          content="Franklin, Jara, Software, Engineering, Full Stack Developer, Projects"
+        />
       </Head>
       <div className="flex justify-center gap-1">
         <h1 className="mb-4 text-lg">Did you say side projects?</h1>

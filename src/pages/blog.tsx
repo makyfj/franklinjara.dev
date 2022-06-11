@@ -5,7 +5,7 @@ const Blog = () => {
   return (
     <>
       <Head>
-        <title>Blog | FJ</title>
+        <title>Blog | Franklin Jara</title>
       </Head>
       <div className="flex justify-center items-center gap-1">
         <h1 className="text-lg text-center">Coming soon...</h1>
