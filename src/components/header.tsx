@@ -28,7 +28,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="hidden sm:visible sm:flex sm:justify-center sm:gap-10 sm:py-5 sm:py-10">
+      <div className="hidden sm:visible sm:flex sm:justify-center sm:gap-10 sm:py-10">
         <NavLinks theme={theme} toggleTheme={toggleTheme} />
       </div>
       <div className="p-4 m-1 space-y-2 sm:hidden text-md">
