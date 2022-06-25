@@ -1,8 +1,13 @@
 import { useState, useEffect } from "react"
 import { useTheme } from "next-themes"
 import Link from "next/link"
-import { BsFillMoonFill as Moon, BsFillSunFill as Sun } from "react-icons/bs"
-import { FcHome, FcCommandLine, FcEngineering } from "react-icons/fc"
+import {
+  FcHome,
+  FcCommandLine,
+  FcEngineering,
+  FcLandscape,
+  FcNightLandscape,
+} from "react-icons/fc"
 import { GiHamburgerMenu as Hamburger } from "react-icons/gi"
 import { motion } from "framer-motion"
 
@@ -134,7 +139,7 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
           whileHover="whileHover"
           onClick={toggleTheme}
         >
-          <Moon className="theme-mode" />
+          <FcNightLandscape className="theme-mode" />
         </motion.button>
       ) : (
         <motion.button
@@ -143,7 +148,7 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
           whileHover="whileHover"
           onClick={toggleTheme}
         >
-          <Sun className="theme-mode" />
+          <FcLandscape className="theme-mode" />
         </motion.button>
       )}
     </>
