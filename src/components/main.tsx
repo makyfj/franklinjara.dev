@@ -25,7 +25,7 @@ const Main = () => {
       <div className="flex flex-col items-center gap-4 my-2">
         <div>
           <Image
-            src="/images/profile.jpeg"
+            src="/images/profile.jpg"
             alt="Profile image"
             width={200}
             height={200}
