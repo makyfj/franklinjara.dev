@@ -36,7 +36,7 @@ const Projects = ({
         />
       </Head>
       <div className="flex justify-center gap-1">
-        <h1 className="mb-4 text-lg">Did you say side projects?</h1>
+        <h1 className="mb-4 text-lg font-bold">Did you say side projects?</h1>
         <FcBusiness className="h-7 w-7" />
         <FcSalesPerformance className="h-7 w-7" />
       </div>

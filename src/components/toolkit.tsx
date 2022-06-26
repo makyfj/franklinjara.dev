@@ -38,7 +38,7 @@ const Toolkit = () => {
   return (
     <>
       <div className="flex gap-1">
-        <h2 className="text-lg text-center">Toolkit</h2>
+        <h2 className="text-lg text-center font-bold">Toolkit</h2>
         <FcSettings className="icon-size" />
         <FcSupport className="icon-size" />
       </div>

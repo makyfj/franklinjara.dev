@@ -31,7 +31,7 @@ const Main = () => {
             height={200}
             className="rounded-full"
           />
-          <h1 className="text-center text-lg">Franklin Jara</h1>
+          <h1 className="text-center text-lg font-bold">Franklin Jara</h1>
         </div>
 
         <Socials />

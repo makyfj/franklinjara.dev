@@ -62,7 +62,7 @@ const Contact = () => {
       </Head>
       <div className="mb-8">
         <div className="flex justify-center items-center">
-          <h1 className="text-lg">Let{`'`}s chat about it!</h1>
+          <h1 className="text-lg font-bold">Let{`'`}s chat about it!</h1>
           <span className="text-center">
             <FcSms className="h-6 w-6" />
           </span>
@@ -79,7 +79,7 @@ const Contact = () => {
           onSubmit={handleSubmit(onSubmit)}
           className="p-4 grid grid-cols-1 gap-2"
         >
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email" className="font-bold">Email</label>
           <input
             type="email"
             id="email"
@@ -92,7 +92,7 @@ const Contact = () => {
             <span className="error-form">{errors.email.message}</span>
           )}
 
-          <label htmlFor="message">Message</label>
+          <label htmlFor="message" className="font-bold">Message</label>
           <textarea
             id="message"
             cols={20}
@@ -112,7 +112,7 @@ const Contact = () => {
               whileHover="whileHover"
               whileTap="whileTap"
               type="submit"
-              className="p-1 rounded button"
+              className="p-1 rounded button font-bold"
             >
               Submit
             </motion.button>

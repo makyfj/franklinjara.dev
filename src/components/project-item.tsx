@@ -13,10 +13,10 @@ const ProjectItem = ({ projectItems }: ProjectItemProps) => {
     <div className="grid grid-cols-1 justify-center items-center gap-4 mx-auto max-w-sm sm:max-w-lg p-2">
       {projectItems.map((project, index) => (
         <div
-          className="grid grid-cols-2 bg-slate-300 dark:bg-slate-700 shadow shadow-xl p-3 rounded justify-items-center"
+          className="grid grid-cols-2 bg-slate-300 dark:bg-slate-700 shadow-xl p-3 rounded justify-items-center"
           key={index}
         >
-          <h2 className="text-lg">{project.repo}</h2>
+          <h2 className="text-lg font-bold">{project.repo}</h2>
           <p className="flex justify-center items-center gap-1">
             {project.stars} <AiFillStar className="w-5 h-5 text-yellow-500" />
           </p>
@@ -29,7 +29,7 @@ const ProjectItem = ({ projectItems }: ProjectItemProps) => {
             whileHover="whileHover"
             whileTap="whileTap"
             href={project.link}
-            className="flex justify-center items-center gap-1"
+            className="flex justify-center items-center gap-1 font-bold"
           >
             Source code
             <AiFillGithub className="w-5 h-5 text-sky-400 hover:text-sky-600" />
@@ -40,7 +40,7 @@ const ProjectItem = ({ projectItems }: ProjectItemProps) => {
               whileHover="whileHover"
               whileTap="whileTap"
               href={project.website}
-              className="flex justify-center items-center gap-1"
+              className="flex justify-center items-center gap-1 font-bold"
             >
               Demo
               <AiOutlineLink className="w-5 h-5 text-sky-400 hover:text-sky-600" />

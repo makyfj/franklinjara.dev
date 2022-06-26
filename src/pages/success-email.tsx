@@ -15,7 +15,7 @@ const SuccessEmail = () => {
           variants={itemVariants}
           initial="hidden"
           animate="visible"
-          className="text-lg"
+          className="text-lg font-bold"
         >
           Thank you!
         </motion.h1>
@@ -24,7 +24,7 @@ const SuccessEmail = () => {
           variants={itemVariants}
           initial="hidden"
           animate="visible"
-          className="max-w-md text-center"
+          className="max-w-md text-center font-bold"
         >
           I{`'`}ll contact you as soon as possible. Feel free to checkout my
           projects on GitHub. Thanks for reaching out 😉

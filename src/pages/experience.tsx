@@ -24,7 +24,7 @@ const Experience = () => {
 
       <div className="flex flex-col justify-center items-center">
         <div className="flex justify-center items-center gap-1">
-          <h1 className="text-lg">What do I do?</h1>
+          <h1 className="text-lg font-bold">What do I do?</h1>
           <FcBusinessman className="w-6 h-6" />
         </div>
         <span className="text-center max-w-sm sm:max-w-lg mt-2 mx-2">

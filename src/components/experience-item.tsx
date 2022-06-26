@@ -13,12 +13,12 @@ const ExperienceItem = ({
   description,
 }: ExperienceItemProps) => {
   return (
-    <div className="bg-slate-300 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded p-4 m-2 shadow shadow-xl">
+    <div className="bg-slate-300 dark:bg-slate-700 text-slate-700 dark:text-slate-200 rounded p-4 m-2 shadow-xl">
       <div className="mb-4 text-center">
-        <h2 className="text-lg">{title}</h2>
+        <h2 className="text-lg font-bold">{title}</h2>
         <p className="text-sm sm:text-md">{date}</p>
       </div>
-      <h3 className="text sm:text-lg mb-2">{company}</h3>
+      <h3 className="text sm:text-lg mb-2 font-bold">{company}</h3>
       <p>{description}</p>
     </div>
   )
