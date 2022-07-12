@@ -19,14 +19,14 @@ const Socials = () => {
         >
           <BsGithub className="social-hover" />
         </motion.a>
-        <motion.a
-          variants={iconVariants}
-          whileHover="whileHover"
-          whileTap="whileTap"
-          href="https://www.linkedin.com/in/franklin-jara-fj"
-        >
-          <BsLinkedin className="social-hover" />
-        </motion.a>
+        {/* <motion.a */}
+        {/*   variants={iconVariants} */}
+        {/*   whileHover="whileHover" */}
+        {/*   whileTap="whileTap" */}
+        {/*   href="https://www.linkedin.com/in/franklin-jara-fj" */}
+        {/* > */}
+        {/*   <BsLinkedin className="social-hover" /> */}
+        {/* </motion.a> */}
         <motion.a
           variants={iconVariants}
           whileHover="whileHover"
