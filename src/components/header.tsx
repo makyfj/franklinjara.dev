@@ -31,6 +31,10 @@ const Header = () => {
     setMounted(true)
   }, [])
 
+  if (!mounted) {
+    return null
+  }
+
   return (
     <header>
       <div className="hidden sm:visible sm:flex sm:justify-center sm:gap-10 sm:py-10">
@@ -43,7 +47,7 @@ const Header = () => {
             whileHover="whileHover"
             whileTap="whileTap"
             onClick={() => setMenuMobile(!menuMobile)}
-            className="p-1 rounded font-bold bg-slate-300 dark:bg-slate-700 hover:bg-slate-500 dark:hover:bg-slate-500"
+            className="p-1 font-bold rounded bg-slate-300 dark:bg-slate-700 hover:bg-slate-500 dark:hover:bg-slate-500"
           >
             <Hamburger className="icon-size" />
           </motion.button>
@@ -92,7 +96,7 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         key={2}
         variants={iconVariants}
         whileHover="whileHover"
-        className="list font-bold"
+        className="font-bold list"
       >
         <Link href="/experience">
           <a className="heading">Experience</a>
@@ -103,7 +107,7 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         key={3}
         variants={iconVariants}
         whileHover="whileHover"
-        className="list font-bold"
+        className="font-bold list"
       >
         <Link href="/projects">
           <a className="heading">Projects</a>
@@ -114,7 +118,7 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         key={4}
         variants={iconVariants}
         whileHover="whileHover"
-        className="list font-bold"
+        className="font-bold list"
       >
         <Link href="/contact">
           <a className="heading">Contact</a>
@@ -125,7 +129,7 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         key={5}
         variants={iconVariants}
         whileHover="whileHover"
-        className="list font-bold"
+        className="font-bold list"
       >
         <Link href="/blog">
           <a className="heading">Blog</a>

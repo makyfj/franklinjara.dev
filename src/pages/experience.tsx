@@ -22,12 +22,12 @@ const Experience = () => {
         />
       </Head>
 
-      <div className="flex flex-col justify-center items-center">
-        <div className="flex justify-center items-center gap-1">
+      <div className="flex flex-col items-center justify-center">
+        <div className="flex items-center justify-center gap-1">
           <h1 className="text-lg font-bold">What do I do?</h1>
           <FcBusinessman className="w-6 h-6" />
         </div>
-        <span className="text-center max-w-sm sm:max-w-lg mt-2 mx-2">
+        <span className="max-w-sm mx-2 mt-2 text-center sm:max-w-lg">
           I am driven by knowledge and passion. With a keen interest in Software
           Engineering, I strive to gain more knowledge and abilities by
           constantly challenging myself to learn new technologies and concepts
@@ -35,13 +35,14 @@ const Experience = () => {
           work, I like to listen techno music and workout.
         </span>
       </div>
-      <div className="grid grid-cols-1 my-10 max-w-lg mx-auto">
+      <div className="grid max-w-lg grid-cols-1 mx-auto my-10">
         <ExperienceItem
           id={1}
           title="Full Stack Developer"
           company="Cherry Hill Programs"
           date="January 2022 - Present"
-          description="I work on the front end of the application, and the back end of the API. I work with React, Typescript, Node.js, GraphQL, AWS and Amplify"
+          description="I am currently working as a Full Stack Developer at Cherry Hill Programs. I am responsible for the 
+          development of the front end and back end of the application using React, Node, DynamoDB, AWS, TypeScript, TailwindCSS, and more."
         />
 
         <ExperienceItem
