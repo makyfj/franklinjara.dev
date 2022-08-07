@@ -27,14 +27,14 @@ const Socials = () => {
         {/* > */}
         {/*   <BsLinkedin className="social-hover" /> */}
         {/* </motion.a> */}
-        <motion.a
-          variants={iconVariants}
-          whileHover="whileHover"
-          whileTap="whileTap"
-          href="files/FranklinJaraResume.pdf"
-        >
-          <Resume className="social-hover" />
-        </motion.a>
+        {/* <motion.a */}
+        {/*   variants={iconVariants} */}
+        {/*   whileHover="whileHover" */}
+        {/*   whileTap="whileTap" */}
+        {/*   href="files/FranklinJaraResume.pdf" */}
+        {/* > */}
+        {/*   <Resume className="social-hover" /> */}
+        {/* </motion.a> */}
       </div>
     </>
   )
