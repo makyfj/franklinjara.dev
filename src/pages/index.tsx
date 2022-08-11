@@ -22,7 +22,7 @@ const Home: NextPage = () => {
           content="Franklin, Jara, Software, Engineering, Full Stack Developer"
         />
           <meta 
-          property="og:title" content="https://res.cloudinary.com/makyfj/image/upload/v1660197560/franklinjaradev/Volg_o9ulxg.jpg"
+          property="og:title" content="/images/profile.png"
           />
         <link rel="icon" href="/favicon.ico" />
       </Head>
