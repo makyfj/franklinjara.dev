@@ -21,6 +21,9 @@ const Home: NextPage = () => {
           name="keywords"
           content="Franklin, Jara, Software, Engineering, Full Stack Developer"
         />
+          <meta 
+          property="og:title" content="https://res.cloudinary.com/makyfj/image/upload/v1660197560/franklinjaradev/Volg_o9ulxg.jpg"
+          />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col items-center gap-4 my-2">
