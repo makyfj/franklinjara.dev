@@ -5,8 +5,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "cypress": "cypress open"
+    "lint": "next lint"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.2",
@@ -27,7 +26,6 @@
     "@types/nodemailer": "^6.4.4",
     "@types/react": "18.0.14",
     "autoprefixer": "^10.4.7",
-    "cypress": "^10.3.0",
     "eslint": "8.19.0",
     "eslint-config-next": "12.1.6",
     "postcss": "^8.4.14",
