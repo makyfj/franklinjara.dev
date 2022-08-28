@@ -42,7 +42,7 @@ const Experience = () => {
           company="Cherry Hill Programs"
           date="January 2022 - Present"
           description="I am currently working as a Full Stack Developer at Cherry Hill Programs. I am responsible for the 
-          development of the front end and back end of the application using React, Node, DynamoDB, AWS, TypeScript, TailwindCSS, and more."
+          development and integration of multiple web apps using the following technologies: React, Node, NextJS, DynamoDB, AWS, TypeScript, TailwindCSS, and more."
         />
 
         <ExperienceItem
