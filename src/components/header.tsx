@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { useTheme } from "next-themes"
 import Link from "next/link"
+import { useRouter } from "next/router"
 import { FcHome, FcLandscape, FcNightLandscape } from "react-icons/fc"
 import { motion } from "framer-motion"
 
@@ -60,6 +61,7 @@ interface NavLinksProps {
 }
 
 const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
+  const { pathname } = useRouter()
   return (
     <>
       <motion.li
@@ -83,7 +85,13 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         className="font-bold list"
       >
         <Link href="/experience">
-          <a className="heading">Experience</a>
+          <a
+            className={`${
+              pathname === "/experience" ? "active-heading" : "heading"
+            }`}
+          >
+            Experience
+          </a>
         </Link>
       </motion.li>
 
@@ -94,7 +102,13 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         className="font-bold list"
       >
         <Link href="/projects">
-          <a className="heading">Projects</a>
+          <a
+            className={`${
+              pathname === "/projects" ? "active-heading" : "heading"
+            }`}
+          >
+            Projects
+          </a>
         </Link>
       </motion.li>
 
@@ -105,7 +119,13 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         className="font-bold list"
       >
         <Link href="/contact">
-          <a className="heading">Contact</a>
+          <a
+            className={`${
+              pathname === "/contact" ? "active-heading" : "heading"
+            }`}
+          >
+            Contact
+          </a>
         </Link>
       </motion.li>
 
@@ -116,7 +136,11 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         className="font-bold list"
       >
         <Link href="/blog">
-          <a className="heading">Blog</a>
+          <a
+            className={`${pathname === "/blog" ? "active-heading" : "heading"}`}
+          >
+            Blog
+          </a>
         </Link>
       </motion.li>
 

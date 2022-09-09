@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-
-body {
-  @apply bg-gradient-to-l from-slate-100 to-slate-300 dark:from-slate-700 dark:to-slate-900 text-slate-700 dark:text-slate-200;
-}
+  body {
+    @apply bg-gradient-to-l from-slate-100 to-slate-300 dark:from-slate-700 dark:to-slate-900 text-slate-700 dark:text-slate-200;
+  }
 }
 
 /* Using this css format because tailwindcss was throwing String.prototype.bold = undefined or null if font-bold was being used*/
@@ -21,8 +20,12 @@ body {
     @apply hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r from-pink-600 to-violet-700;
   }
 
+  .active-heading {
+    @apply text-2xl text-transparent bg-clip-text bg-gradient-to-r from-pink-600 to-violet-700;
+  }
+
   .heading {
-    @apply text-lg  hover-heading;
+    @apply text-lg hover-heading;
   }
 
   .icon-size {
@@ -34,7 +37,7 @@ body {
   }
 
   .social-hover {
-    @apply hover:text-sky-500 w-6 h-6;
+    @apply w-6 h-6 hover:text-sky-500;
   }
 
   .error-form {
