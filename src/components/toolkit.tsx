@@ -30,6 +30,7 @@ import {
   SiAmazondynamodb,
   SiAwsamplify,
   SiSass,
+  SiDocker,
 } from "react-icons/si"
 
 import ToolkitItem from "./toolkit-item"
@@ -38,18 +39,18 @@ const Toolkit = () => {
   return (
     <>
       <div className="flex gap-1">
-        <h2 className="text-lg text-center font-bold">Toolkit</h2>
+        <h2 className="text-lg font-bold text-center">Toolkit</h2>
         <FcSettings className="icon-size" />
         <FcSupport className="icon-size" />
       </div>
-      <p className="text-center max-w-sm sm:max-w-xl mb-2 mx-2">
+      <p className="max-w-sm mx-2 mb-2 text-center sm:max-w-xl">
         I use a variety of tools to get through all the obstacles as efficiently
         as possible. I really enjoy working with statically typed languages,
         especially TypeScript. This negates most of the silly bugs that could
         sneak into the codebase and creates a quick feedback loop to fix all the
         little bugs as you write and refactor new code.
       </p>
-      <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 max-w-sm sm:max-w-lg mx-auto bg-slate-300 dark:bg-slate-700 text-slate-700 dark:text-slate-200 p-3 rounded shadow shadow-xl">
+      <div className="grid max-w-sm grid-cols-3 gap-4 p-3 rounded shadow-xl p--auto sm:grid-cols-4 sm:max-w-lg bg-slate-300 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
         <ToolkitItem id={1} name="NextJS" icon={SiNextdotjs} />
         <ToolkitItem id={2} name="Neovim" icon={SiNeovim} />
         <ToolkitItem id={3} name="TypeScript" icon={SiTypescript} />
@@ -80,6 +81,7 @@ const Toolkit = () => {
         <ToolkitItem id={28} name="DynamoDB" icon={SiAmazondynamodb} />
         <ToolkitItem id={29} name="Amplify" icon={SiAwsamplify} />
         <ToolkitItem id={30} name="Sass" icon={SiSass} />
+        <ToolkitItem id={31} name="Dcoker" icon={SiDocker} />
       </div>
     </>
   )
