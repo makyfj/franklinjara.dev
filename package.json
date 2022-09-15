@@ -10,7 +10,7 @@
   "dependencies": {
     "@headlessui/react": "^1.7.0",
     "@tailwindcss/forms": "^0.5.2",
-    "framer-motion": "^7.2.0",
+    "framer-motion": "^7.3.5",
     "next": "12.3.0",
     "next-themes": "^0.2.0",
     "nodemailer": "^6.7.8",
