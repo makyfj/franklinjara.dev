@@ -21,17 +21,22 @@ const Home: NextPage = () => {
           name="keywords"
           content="Franklin, Jara, Software, Engineering, Full Stack Developer"
         />
-          <meta 
-          property="og:title" content="/images/profile.png"
-          />
+        <meta property="og:title" content="/images/profile.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col items-center gap-4 my-2">
-        <div>
-          <h1 className="text-lg font-bold text-center">Franklin Jara</h1>
+        <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-4">
+          <img
+            src="/images/franklin.png"
+            alt="Franklin Jara"
+            className="rounded-full h-40 w-36"
+          />
+          <div className="flex flex-col gap-4">
+            <h1 className="text-lg font-bold text-center">Franklin Jara</h1>
+            <Socials />
+          </div>
         </div>
 
-        <Socials />
         <p className="max-w-sm mx-2 my-2 text-center sm:max-w-xl">
           Full Stack Developer @ Cherry Hill Programs and Student @ Adelphi
           University pursuing a Master{`'`}s Degree in Computer Science with
