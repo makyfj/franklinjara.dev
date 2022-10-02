@@ -81,7 +81,7 @@ const Toolkit = () => {
         <ToolkitItem id={28} name="DynamoDB" icon={SiAmazondynamodb} />
         <ToolkitItem id={29} name="Amplify" icon={SiAwsamplify} />
         <ToolkitItem id={30} name="Sass" icon={SiSass} />
-        <ToolkitItem id={31} name="Dcoker" icon={SiDocker} />
+        <ToolkitItem id={31} name="Docker" icon={SiDocker} />
       </div>
     </>
   )
