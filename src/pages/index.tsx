@@ -3,9 +3,7 @@ import { Suspense } from "react"
 
 import Loading from "@/components/loading"
 
-const DynamicHome = dynamic(() => import("@/components/home"), {
-  suspense: true,
-})
+const DynamicHome = dynamic(() => import("@/components/home"))
 
 const Home = () => {
   return (
