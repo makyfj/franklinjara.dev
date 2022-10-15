@@ -1,4 +1,5 @@
 import Head from "next/head"
+import Image from "next/image"
 
 import Socials from "@/components/socials"
 import Toolkit from "@/components/toolkit"
@@ -21,15 +22,16 @@ const Home = () => {
           name="keywords"
           content="Franklin, Jara, Software, Engineering, Full Stack Developer"
         />
-        <meta property="og:title" content="/images/profile.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col items-center gap-4 my-2">
         <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-4">
-          <img
+          <Image
             src="/images/franklin.png"
             alt="Franklin Jara"
-            className="rounded-full h-40 w-36"
+            className="rounded-full"
+            width={140}
+            height={150}
           />
           <div className="flex flex-col gap-4">
             <h1 className="text-lg font-bold text-center">Franklin Jara</h1>
