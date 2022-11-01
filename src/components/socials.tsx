@@ -31,7 +31,7 @@ const Socials = () => {
           variants={iconVariants}
           whileHover="whileHover"
           whileTap="whileTap"
-          href="files/FranklinJaraResume.pdf"
+          href="files/Franklin_Resume.pdf"
         >
           <Resume className="social-hover" />
         </motion.a>
