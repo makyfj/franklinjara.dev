@@ -58,7 +58,7 @@ export const getStaticProps: GetStaticProps<ProjectsProps> = async (
   context
 ) => {
   const pinnedRepositories = await fetch(
-    "https://gh-pinned-repos.egoist.sh/?username=makyfj"
+    "https://gh-pinned.nxl.sh/api/user/makyfj"
   ).then(async (response) => response.json() as Promise<PinnedRepositories[]>)
 
   return {
