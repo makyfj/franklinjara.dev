@@ -64,7 +64,7 @@ const MenuMobile = ({ items }: MenuMobileProps) => {
                       } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                     >
                       <Link href={item.href}>
-                        <a className="text-center">{item.label}</a>
+                        <p className="text-center">{item.label}</p>
                       </Link>
                     </div>
                   )}

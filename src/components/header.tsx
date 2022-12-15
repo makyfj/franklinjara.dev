@@ -72,9 +72,7 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         className="list"
       >
         <Link href="/">
-          <a className="font-bold">
-            <FcHome className="icon-size" />
-          </a>
+            <FcHome className="icon-size font-bold" />
         </Link>
       </motion.li>
 
@@ -85,13 +83,13 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         className="font-bold list"
       >
         <Link href="/experience">
-          <a
+          <div
             className={`${
               pathname === "/experience" ? "active-heading" : "heading"
             }`}
           >
             Experience
-          </a>
+          </div>
         </Link>
       </motion.li>
 
@@ -102,13 +100,13 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         className="font-bold list"
       >
         <Link href="/projects">
-          <a
+          <div
             className={`${
               pathname === "/projects" ? "active-heading" : "heading"
             }`}
           >
             Projects
-          </a>
+          </div>
         </Link>
       </motion.li>
 
@@ -119,13 +117,13 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         className="font-bold list"
       >
         <Link href="/contact">
-          <a
+          <div
             className={`${
               pathname === "/contact" ? "active-heading" : "heading"
             }`}
           >
             Contact
-          </a>
+          </div>
         </Link>
       </motion.li>
 
@@ -136,11 +134,11 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         className="font-bold list"
       >
         <Link href="/blog">
-          <a
+          <div
             className={`${pathname === "/blog" ? "active-heading" : "heading"}`}
           >
             Blog
-          </a>
+          </div>
         </Link>
       </motion.li>
 
