@@ -24,10 +24,10 @@ const Experience = () => {
 
       <div className="flex flex-col items-center justify-center">
         <div className="flex items-center justify-center gap-1">
-          <h1 className="text-lg font-bold">What do I do?</h1>
+          <h1 className="text-3xl font-bold">What do I do?</h1>
           <FcBusinessman className="w-6 h-6" />
         </div>
-        <span className="max-w-sm mx-2 mt-2 text-center sm:max-w-lg">
+        <span className="max-w-sm mx-2 mt-2 text-center sm:max-w-lg text-lg">
           I am driven by knowledge and passion. With a keen interest in Software
           Engineering, I strive to gain more knowledge and abilities by
           constantly challenging myself to learn new technologies and concepts

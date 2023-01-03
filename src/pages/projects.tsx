@@ -36,12 +36,12 @@ const Projects = ({
         />
       </Head>
       <div className="flex justify-center gap-1">
-        <h1 className="mb-4 text-lg font-bold">Did you say side projects?</h1>
+        <h1 className="mb-4 text-2xl md:text-3xl font-bold">Did you say side projects?</h1>
         <FcBusiness className="h-7 w-7" />
         <FcSalesPerformance className="h-7 w-7" />
       </div>
       <div className="flex justify-center max-w-lg mx-auto my-2">
-        <p className="mx-2 text-center">
+        <p className="mx-2 text-center text-lg">
           I am always learning new technologies and I enjoy creating and playing
           with side projects to have a better understanding of each technology
           that I am learning.

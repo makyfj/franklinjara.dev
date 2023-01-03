@@ -43,7 +43,7 @@ const Toolkit = () => {
         <FcSettings className="icon-size" />
         <FcSupport className="icon-size" />
       </div>
-      <p className="max-w-sm mx-2 mb-2 text-center sm:max-w-xl">
+      <p className="max-w-sm mx-2 mb-2 text-center sm:max-w-xl text-lg">
         I use a variety of tools to get through all the obstacles as efficiently
         as possible. I really enjoy working with statically typed languages,
         especially TypeScript. This negates most of the silly bugs that could

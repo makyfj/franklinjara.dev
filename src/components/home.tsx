@@ -6,10 +6,9 @@ import Toolkit from "@/components/toolkit"
 
 const Home = () => {
   return (
-
     <>
       <Head>
-        <title>Home | Franklin Jara</title>
+        <title>Franklin Jara | Software Engineer</title>
         <meta
           name="description"
           content="
@@ -20,26 +19,26 @@ const Home = () => {
         <meta name="title" content="Franklin Jara" />
         <meta
           name="keywords"
-          content="Franklin, Jara, Software, Engineering, Full Stack Developer"
+          content="Franklin, Jara, Software, Engineering, Full Stack Developer, Engineer"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="flex flex-col items-center gap-4 my-2">
-        <div className="flex flex-col md:flex-row-reverse items-center justify-between gap-4">
+        <div className="flex flex-col items-center justify-between gap-4">
           <Image
-            src="/images/franklin.png"
+            src="/images/ProfileLin.jpeg"
             alt="Franklin Jara"
-            className="rounded-full"
-            width={140}
+            className="rounded-full h-44 w-auto"
+            width={400}
             height={150}
           />
           <div className="flex flex-col gap-4">
-            <h1 className="text-lg font-bold text-center">Franklin Jara</h1>
+            <h1 className="text-3xl font-bold text-center">Franklin Jara</h1>
             <Socials />
           </div>
         </div>
 
-        <p className="max-w-sm mx-2 my-2 text-center sm:max-w-xl">
+        <p className="max-w-sm mx-2 my-2 text-center sm:max-w-xl text-lg">
           Full Stack Developer @ Cherry Hill Programs and Student @ Adelphi
           University pursuing a Master{`'`}s Degree in Computer Science with
           specialization in Software Engineering. I enjoy coding, working out

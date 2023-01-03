@@ -62,13 +62,13 @@ const Contact = () => {
       </Head>
       <div className="mb-8">
         <div className="flex justify-center items-center">
-          <h1 className="text-lg font-bold">Let{`'`}s chat about it!</h1>
+          <h1 className="text-3xl font-bold">Let{`'`}s chat about it!</h1>
           <span className="text-center">
             <FcSms className="h-6 w-6" />
           </span>
         </div>
         <div className="flex justify-center items-center">
-          <p className="text-center">Send me an email using the form below </p>
+          <p className="text-center text-lg">Send me an email using the form below </p>
           <span>
             <FcBusinessman className="h-6 w-6" />
           </span>
