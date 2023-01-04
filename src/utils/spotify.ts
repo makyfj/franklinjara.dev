@@ -5,6 +5,7 @@ export interface INowPlayingSong {
   isPlaying: boolean
   songUrl: string
   title: string
+  previewUrl: string
 }
 
 export async function fetcher<JSON = any>(
@@ -22,7 +23,7 @@ const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64")
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`
 
-async function getAccessToken() {
+const getAccessToken = async () => {
   const response = await fetch(TOKEN_ENDPOINT, {
     method: "POST",
     headers: {
@@ -38,7 +39,7 @@ async function getAccessToken() {
   return response.json()
 }
 
-export async function getNowPlaying() {
+export const getNowPlaying = async () => {
   const { access_token } = await getAccessToken()
 
   const data = await fetch(NOW_PLAYING_ENDPOINT, {

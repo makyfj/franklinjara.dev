@@ -3,6 +3,7 @@ import Image from "next/image"
 
 import Socials from "@/components/socials"
 import Toolkit from "@/components/toolkit"
+import NowPlaying from "./now-playing"
 
 const Home = () => {
   return (
@@ -37,7 +38,6 @@ const Home = () => {
             <Socials />
           </div>
         </div>
-
         <p className="max-w-sm mx-2 my-2 text-center sm:max-w-xl text-lg">
           Full Stack Developer @ Cherry Hill Programs and Student @ Adelphi
           University pursuing a Master{`'`}s Degree in Computer Science with
@@ -45,6 +45,7 @@ const Home = () => {
           and techno. I{`'`}m always pushing myself harder than yesterday to
           become a great software engineer and human being.
         </p>
+        <NowPlaying />
         <Toolkit />
       </div>
     </>

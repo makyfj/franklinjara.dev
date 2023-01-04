@@ -2,14 +2,12 @@ import type { NextApiRequest, NextApiResponse } from "next"
 import { getNowPlaying } from "src/utils/spotify"
 
 export default async function handler(_: NextApiRequest, res: NextApiResponse) {
-  const testResponse = await getNowPlaying()
-  console.log(testResponse)
-  if (process.env.NODE_ENV !== "production") {
-    return res.json({
-      artist: "Development",
-      isPlaying: true,
-    })
-  }
+  /* if (process.env.NODE_ENV !== "production") { */
+  /*   return res.json({ */
+  /*     artist: "Development", */
+  /*     isPlaying: true, */
+  /*   }) */
+  /* } */
   const response = await getNowPlaying()
 
   if (response.status === 204 || response.status > 400) {
@@ -32,6 +30,7 @@ export default async function handler(_: NextApiRequest, res: NextApiResponse) {
   const album = song.item.album.name
   const albumImageUrl = song.item.album.images[0].url
   const songUrl = song.item.external_urls.spotify
+  const previewUrl = song.item.preview_url
 
   res.setHeader(
     "Cache-Control",
@@ -45,5 +44,6 @@ export default async function handler(_: NextApiRequest, res: NextApiResponse) {
     isPlaying,
     songUrl,
     title,
+    previewUrl,
   })
 }
