@@ -2,6 +2,8 @@ import type { NextApiRequest, NextApiResponse } from "next"
 import { getNowPlaying } from "src/utils/spotify"
 
 export default async function handler(_: NextApiRequest, res: NextApiResponse) {
+  const testResponse = await getNowPlaying()
+  console.log(testResponse)
   if (process.env.NODE_ENV !== "production") {
     return res.json({
       artist: "Development",

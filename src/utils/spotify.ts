@@ -23,7 +23,6 @@ const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-pla
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`
 
 async function getAccessToken() {
-  console.log(client_id, client_secret, refresh_token)
   const response = await fetch(TOKEN_ENDPOINT, {
     method: "POST",
     headers: {
