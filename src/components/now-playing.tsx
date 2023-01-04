@@ -21,7 +21,7 @@ const NowPlaying = () => {
               ease: "easeInOut",
               times: [0, 0.2, 0.5, 0.8, 1],
               repeat: Infinity,
-              repeatDelay: 1,
+              repeatDelay: 0,
             }}
           >
             <svg viewBox="0 0 168 168">
