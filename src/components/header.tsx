@@ -19,7 +19,7 @@ const Header = () => {
     { label: "Home", href: "/" },
     { label: "Experience", href: "/experience" },
     { label: "Projects", href: "/projects" },
-    { label: "Blog", href: "/blog" },
+    { label: "Blog", href: "https://blog.franklinjara.dev" },
     { label: "Contact", href: "/contact" },
   ]
 
@@ -72,7 +72,7 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         className="list"
       >
         <Link href="/">
-            <FcHome className="icon-size font-bold" />
+          <FcHome className="icon-size font-bold" />
         </Link>
       </motion.li>
 
@@ -127,20 +127,21 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
         </Link>
       </motion.li>
 
-      <motion.li
+      <motion.a
         key={5}
         variants={iconVariants}
         whileHover="whileHover"
         className="font-bold list"
       >
-        <Link href="/blog">
-          <div
-            className={`${pathname === "/blog" ? "active-heading" : "heading"}`}
-          >
-            Blog
-          </div>
-        </Link>
-      </motion.li>
+        <a
+          href="https://blog.franklinjara.dev"
+          className="heading"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Blog
+        </a>
+      </motion.a>
 
       {theme === "dark" ? (
         <motion.button

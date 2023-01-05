@@ -63,9 +63,17 @@ const MenuMobile = ({ items }: MenuMobileProps) => {
                           : "text-slate-700 dark:text-slate-100"
                       } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                     >
-                      <Link href={item.href}>
-                        <p className="text-center">{item.label}</p>
-                      </Link>
+                      {item.label === "Blog" ? (
+                        <div>
+                          <a href={item.href} target="_blank" rel="noreferrer">
+                            {item.label}
+                          </a>
+                        </div>
+                      ) : (
+                        <Link href={item.href}>
+                          <p className="text-center">{item.label}</p>
+                        </Link>
+                      )}
                     </div>
                   )}
                 </HeadlessMenu.Item>
