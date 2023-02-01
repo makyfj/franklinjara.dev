@@ -1,5 +1,4 @@
 import Head from "next/head"
-import Image from "next/image"
 
 import Socials from "@/components/socials"
 import Toolkit from "@/components/toolkit"
@@ -26,17 +25,8 @@ const Home = () => {
       </Head>
       <div className="flex flex-col items-center gap-4 my-2">
         <div className="flex flex-col items-center justify-between gap-4">
-          <Image
-            src="/images/ProfileLin.jpeg"
-            alt="Franklin Jara"
-            className="rounded-full h-44 w-auto"
-            width={400}
-            height={150}
-          />
-          <div className="flex flex-col gap-4">
-            <h1 className="text-3xl font-bold text-center">Franklin Jara</h1>
-            <Socials />
-          </div>
+          <h1 className="text-3xl font-bold text-center">Franklin Jara</h1>
+          <Socials />
         </div>
         <p className="max-w-sm mx-2 my-2 text-center sm:max-w-xl text-lg">
           Full Stack Developer @ Cherry Hill Programs and Student @ Adelphi
