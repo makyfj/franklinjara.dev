@@ -1,7 +1,6 @@
 import {
   BsGithub,
   BsLinkedin,
-  BsFillFileTextFill as Resume,
 } from "react-icons/bs"
 import { motion } from "framer-motion"
 
@@ -26,14 +25,6 @@ const Socials = () => {
           href="https://www.linkedin.com/in/franklin-jara-fj"
         >
           <BsLinkedin className="social-hover" />
-        </motion.a>
-        <motion.a
-          variants={iconVariants}
-          whileHover="whileHover"
-          whileTap="whileTap"
-          href="files/Franklin_Resume.pdf"
-        >
-          <Resume className="social-hover" />
         </motion.a>
       </div>
     </>
