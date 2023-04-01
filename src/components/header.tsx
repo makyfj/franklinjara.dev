@@ -18,9 +18,7 @@ const Header = () => {
   const items = [
     { label: "Home", href: "/" },
     { label: "Experience", href: "/experience" },
-    { label: "Projects", href: "/projects" },
-    { label: "Blog", href: "https://blog.franklinjara.dev" },
-    { label: "Contact", href: "/contact" },
+    { label: "Projects", href: "/projects" }
   ]
 
   const toggleTheme = () => {
@@ -84,9 +82,8 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
       >
         <Link href="/experience">
           <div
-            className={`${
-              pathname === "/experience" ? "active-heading" : "heading"
-            }`}
+            className={`${pathname === "/experience" ? "active-heading" : "heading"
+              }`}
           >
             Experience
           </div>
@@ -101,47 +98,13 @@ const NavLinks = ({ theme, toggleTheme }: NavLinksProps) => {
       >
         <Link href="/projects">
           <div
-            className={`${
-              pathname === "/projects" ? "active-heading" : "heading"
-            }`}
+            className={`${pathname === "/projects" ? "active-heading" : "heading"
+              }`}
           >
             Projects
           </div>
         </Link>
       </motion.li>
-
-      <motion.li
-        key={4}
-        variants={iconVariants}
-        whileHover="whileHover"
-        className="font-bold list"
-      >
-        <Link href="/contact">
-          <div
-            className={`${
-              pathname === "/contact" ? "active-heading" : "heading"
-            }`}
-          >
-            Contact
-          </div>
-        </Link>
-      </motion.li>
-
-      <motion.a
-        key={5}
-        variants={iconVariants}
-        whileHover="whileHover"
-        className="font-bold list"
-      >
-        <a
-          href="https://blog.franklinjara.dev"
-          className="heading"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Blog
-        </a>
-      </motion.a>
 
       {theme === "dark" ? (
         <motion.button

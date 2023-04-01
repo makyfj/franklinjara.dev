@@ -36,7 +36,9 @@ const Projects = ({
         />
       </Head>
       <div className="flex justify-center gap-1">
-        <h1 className="mb-4 text-2xl md:text-3xl font-bold">Did you say side projects?</h1>
+        <h1 className="mb-4 text-2xl md:text-3xl font-bold">
+          Did you say side projects?
+        </h1>
         <FcBusiness className="h-7 w-7" />
         <FcSalesPerformance className="h-7 w-7" />
       </div>
@@ -54,9 +56,7 @@ const Projects = ({
 
 export default Projects
 
-export const getStaticProps: GetStaticProps<ProjectsProps> = async (
-  context
-) => {
+export const getStaticProps: GetStaticProps<ProjectsProps> = async () => {
   const pinnedRepositories = await fetch(
     "https://gh-pinned.nxl.sh/api/user/makyfj"
   ).then(async (response) => response.json() as Promise<PinnedRepositories[]>)
