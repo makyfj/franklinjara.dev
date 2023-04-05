@@ -4,7 +4,7 @@ import Image from "next/image"
 import Socials from "@/components/socials"
 import Toolkit from "@/components/toolkit"
 import NowPlaying from "@/components/now-playing"
-import profilePic from "public/images/franklin.webp"
+import profilePic from "public/images/Franklin.webp"
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
         "
         />
         <meta name="title" content="Franklin Jara" />
-        <meta property="og:image" content="/images/franklin.webp" key="image" />
+        <meta property="og:image" content="/images/Franklin.webp" key="image" />
         <meta
           name="keywords"
           content="Franklin, Jara, Software, Engineering, Full Stack Developer, Engineer, Franklin Jara"
@@ -36,7 +36,7 @@ const Home = () => {
         "
         />
 
-        <meta name="twitter:image" content="/images/franklin.webp" />
+        <meta name="twitter:image" content="/images/Franklin.webp" />
       </Head>
       <div className="flex flex-col items-center gap-4 my-2">
         <div className="flex flex-col items-center justify-between gap-4">
