@@ -19,7 +19,7 @@ const Home = () => {
         "
         />
         <meta name="title" content="Franklin Jara" />
-        <meta property="og:image" content="/images/Franklin.webp" key="image" />
+        <meta property="og:image" content="https://www.franklinjara.dev/images/Franklin.webp" key="image" />
         <meta
           name="keywords"
           content="Franklin, Jara, Software, Engineering, Full Stack Developer, Engineer, Franklin Jara"
@@ -36,7 +36,7 @@ const Home = () => {
         "
         />
 
-        <meta name="twitter:image" content="/images/Franklin.webp" />
+        <meta name="twitter:image" content="https://www.franklinjara.dev/images/Franklin.webp" />
       </Head>
       <div className="flex flex-col items-center gap-4 my-2">
         <div className="flex flex-col items-center justify-between gap-4">
