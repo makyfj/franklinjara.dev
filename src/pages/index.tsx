@@ -4,6 +4,7 @@ import Image from "next/image"
 import Socials from "@/components/socials"
 import Toolkit from "@/components/toolkit"
 import NowPlaying from "@/components/now-playing"
+import profilePic from "public/images/franklin.webp"
 
 const Home = () => {
   return (
@@ -40,7 +41,7 @@ const Home = () => {
       <div className="flex flex-col items-center gap-4 my-2">
         <div className="flex flex-col items-center justify-between gap-4">
           <Image
-            src="/images/franklin.webp"
+            src={profilePic}
             width={180}
             height={180}
             alt="Franklin Jara"
