@@ -16,8 +16,8 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Franklin Jara | Software Engineer",
   description:
-    "Franklin Jara is a Software Engineer @ Cherry Hill Programs and Student @ Adelphi University pursuing a Master's Degree in Computer Science with specialization in Software Engineering.",
-  metadataBase: new URL("https://acme.com/api"),
+    "Franklin Jara is a Software Engineer @ Cherry Hill Programs and Graduate Student @ Adelphi University pursuing a Master's Degree in Computer Science with specialization in Software Engineering.",
+  metadataBase: new URL("https://franklinjara.dev"),
   generator: "Franklin Jara",
   applicationName: "Franklin Jara",
   keywords: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Franklin Jara | Software Engineer",
     description:
-      "Franklin Jara is a Software Engineer @ Cherry Hill Programs and Student @ Adelphi University pursuing a Master's Degree in Computer Science with specialization in Software Engineering.",
+      "Franklin Jara is a Software Engineer @ Cherry Hill Programs and Graduate Student @ Adelphi University pursuing a Master's Degree in Computer Science with specialization in Software Engineering.",
     url: "https://franklinjara.dev",
     siteName: "Franklin Jara | Software Engineer",
     images: [
@@ -52,6 +52,19 @@ export const metadata: Metadata = {
     ],
     locale: "en-US",
     type: "website",
+  },
+  robots: {
+    index: false,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: false,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 }
 
@@ -71,7 +84,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex min-h-screen flex-col gap-4">
             <Header />
-            <div className="container flex-1">{children}</div>
+            <div className="container flex-1 mx-auto">{children}</div>
             <Footer />
           </div>
         </ThemeProvider>
