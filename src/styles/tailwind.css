@@ -12,4 +12,8 @@
   .custom-h3 {
     @apply mt-8 scroll-m-20 text-2xl font-semibold tracking-tight;
   }
+
+  .custom-p {
+    @apply leading-7 [&:not(:first-child)]:mt-1;
+  }
 }

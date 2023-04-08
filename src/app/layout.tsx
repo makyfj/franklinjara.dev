@@ -16,7 +16,7 @@ const fontSans = FontSans({
 export const metadata: Metadata = {
   title: "Franklin Jara | Software Engineer",
   description:
-    "Franklin Jara is a Software Engineer @ Cherry Hill Programs and Graduate Student @ Adelphi University pursuing a Master's Degree in Computer Science with specialization in Software Engineering.",
+    "Software Engineer @ Cherry Hill Programs and Graduate Student @ Adelphi University pursuing a Master's Degree in Computer Science with specialization in Software Engineering.",
   metadataBase: new URL("https://franklinjara.dev"),
   generator: "Franklin Jara",
   applicationName: "Franklin Jara",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Franklin Jara | Software Engineer",
     description:
-      "Franklin Jara is a Software Engineer @ Cherry Hill Programs and Graduate Student @ Adelphi University pursuing a Master's Degree in Computer Science with specialization in Software Engineering.",
+      "Software Engineer @ Cherry Hill Programs and Graduate Student @ Adelphi University pursuing a Master's Degree in Computer Science with specialization in Software Engineering.",
     url: "https://franklinjara.dev",
     siteName: "Franklin Jara | Software Engineer",
     images: [
