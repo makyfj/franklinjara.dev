@@ -1,11 +1,11 @@
 import { GithubIcon, Linkedin, Mail, Settings, Wrench } from "lucide-react"
 import Image from "next/image"
-import profilePic from "public/images/Franklin.webp"
+import profilePic from "public/images/Franklin-min.png"
 
 import { Button } from "src/components/ui/button"
 import Toolkit from "src/components/toolkit"
 import Spotify from "src/components/spotify"
-import { INowPlayingSong } from "@/utils/spotify"
+import { INowPlayingSong } from "src/utils/spotify"
 
 export default async function Home() {
   const response = await fetch(`${process.env.URL}/api/spotify`, {
@@ -27,7 +27,7 @@ export default async function Home() {
         width={200}
         height={200}
         alt="Picture of the author"
-        className="mx-auto rounded-full"
+        className="mx-auto"
         priority={true}
       />
       <h1 className="custom-h1 text-center">Franklin Jara</h1>
