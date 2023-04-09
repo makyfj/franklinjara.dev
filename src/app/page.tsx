@@ -26,6 +26,7 @@ export default async function Home() {
         src={profilePic}
         width={200}
         height={200}
+        placeholder="blur"
         alt="Picture of the author"
         className="mx-auto"
         priority={true}
