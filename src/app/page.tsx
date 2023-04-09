@@ -26,6 +26,7 @@ export default async function Home() {
         src={profilePic}
         width={200}
         height={200}
+        placeholder="blur"
         alt="Picture of the author"
         className="mx-auto"
         priority={true}
@@ -56,7 +57,7 @@ export default async function Home() {
           </Button>
         </a>
       </div>
-      <p className="mx-4 text-center md:max-w-2xl md:mx-auto custom-p">
+      <p className="mx-4 md:max-w-2xl md:mx-auto custom-p">
         <span className="font-bold">Software Engineer</span> @ Cherry Hill
         Programs and <span className="font-bold">Graduate Student</span> @
         Adelphi University pursuing a Master{`'`}s Degree in Computer Science
@@ -69,12 +70,12 @@ export default async function Home() {
         Toolkit <Settings />
         <Wrench />
       </h2>
-      <p className="mx-4 text-center md:max-w-2xl md:mx-auto custom-p">
+      <p className="mx-4 md:max-w-2xl md:mx-auto custom-p">
         As a Software Engineer, I am well-versed in a variety of tools to
         overcome obstacles with maximum efficiency. TypeScript is one of my
         favorite statically typed languages to work with, as it significantly
         reduces the risk of errors in the codebase and enables a rapid feedback
-        loop for debugging during code writing and refactoring
+        loop for debugging during code writing and refactoring.
       </p>
       <Toolkit />
       <Spotify data={data} />
