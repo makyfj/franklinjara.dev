@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Franklin Jara | Software Engineer",
     images: [
       {
-        url: "https://franklinjara.dev/images/Franklin-min.png",
+        url: "https://franklinjara.dev/images/Franklin.webp",
         width: 800,
         height: 600,
         alt: "Franklin Jara | Software Engineer",
