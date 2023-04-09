@@ -1,13 +1,10 @@
 "use client"
 
-import useSWR from "swr"
 import { motion } from "framer-motion"
 
-import { fetcher, INowPlayingSong } from "src/utils/spotify"
+import { INowPlayingSong } from "src/utils/spotify"
 
-const Spotify = () => {
-  const { data } = useSWR<INowPlayingSong>("/api/spotify", fetcher)
-
+const Spotify = ({ data }: { data: INowPlayingSong | undefined }) => {
   return (
     <div className="flex flex-col gap-2 space-x-0 sm:space-x-2 justify-center items-center">
       <div className="flex flex-row gap-2 items-center">

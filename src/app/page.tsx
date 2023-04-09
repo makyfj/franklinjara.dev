@@ -5,8 +5,22 @@ import profilePic from "public/images/Franklin.webp"
 import { Button } from "src/components/ui/button"
 import Toolkit from "src/components/toolkit"
 import Spotify from "src/components/spotify"
+import { INowPlayingSong } from "@/utils/spotify"
 
-export default function Home() {
+
+export default async function Home() {
+  const response = await fetch("http://localhost:3000/api/spotify", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    next: {
+      revalidate: 5,
+    },
+  })
+
+  const data: INowPlayingSong = await response.json()
+
   return (
     <main className="flex flex-col gap-4">
       <Image
@@ -64,7 +78,7 @@ export default function Home() {
         loop for debugging during code writing and refactoring
       </p>
       <Toolkit />
-      <Spotify />
+      <Spotify data={data} />
     </main>
   )
 }
