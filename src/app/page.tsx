@@ -1,4 +1,4 @@
-import { GithubIcon, Linkedin, Settings, Wrench } from "lucide-react"
+import { GithubIcon, Linkedin, Mail, Settings, Wrench } from "lucide-react"
 import Image from "next/image"
 import profilePic from "public/images/Franklin.webp"
 
@@ -31,6 +31,15 @@ export default function Home() {
         >
           <Button variant="link">
             <Linkedin />
+          </Button>
+        </a>
+        <a
+          href="mailto:franklinjaradev@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <Button variant="link">
+            <Mail />
           </Button>
         </a>
       </div>
