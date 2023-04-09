@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import { fetcher, INowPlayingSong } from "src/utils/spotify"
 
 const Spotify = () => {
-  const { data } = useSWR<INowPlayingSong>("/api/now-playing", fetcher)
+  const { data } = useSWR<INowPlayingSong>("/api/spotify", fetcher)
 
   return (
     <div className="flex flex-col gap-2 space-x-0 sm:space-x-2 justify-center items-center">
