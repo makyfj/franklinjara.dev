@@ -1,9 +1,11 @@
+"use client"
+
 import useSWR from "swr"
 import { motion } from "framer-motion"
 
 import { fetcher, INowPlayingSong } from "src/utils/spotify"
 
-const NowPlaying = () => {
+const Spotify = () => {
   const { data } = useSWR<INowPlayingSong>("/api/now-playing", fetcher)
 
   return (
@@ -50,7 +52,9 @@ const NowPlaying = () => {
               {data.title}
             </a>
           ) : (
-            <p className="text-slate-700 dark:text-slate-200 font-medium text-lg">Not Playing</p>
+            <p className="text-slate-700 dark:text-slate-200 font-medium text-lg">
+              Not Playing
+            </p>
           )}
           <span className="mx-2 text-gray-400  hidden sm:block">{" • "}</span>
           <p className="text-slate-700 dark:text-slate-200 max-w-max truncate text-lg">
@@ -62,4 +66,4 @@ const NowPlaying = () => {
   )
 }
 
-export default NowPlaying
+export default Spotify

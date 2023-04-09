@@ -1,4 +1,8 @@
-import { FcSettings, FcSupport } from "react-icons/fc"
+"use client"
+
+import { IconType } from "react-icons"
+import { motion } from "framer-motion"
+
 import {
   SiNextdotjs,
   SiNeovim,
@@ -12,16 +16,11 @@ import {
   SiVercel,
   SiPython,
   SiRedux,
-  SiChakraui,
   SiMongodb,
   SiExpress,
   SiNodedotjs,
   SiMysql,
   SiPostgresql,
-  SiHeroku,
-  SiCplusplus,
-  SiJava,
-  SiNestjs,
   SiGraphql,
   SiApollographql,
   SiGithub,
@@ -31,60 +30,80 @@ import {
   SiAwsamplify,
   SiSass,
   SiDocker,
+  SiAwslambda,
+  SiTrpc,
+  SiPrisma,
+  SiJirasoftware,
+  SiVite,
 } from "react-icons/si"
-
-import ToolkitItem from "./toolkit-item"
+import { Card, CardContent } from "./ui/card"
 
 const Toolkit = () => {
   return (
-    <>
-      <div className="flex gap-1">
-        <h2 className="text-lg font-bold text-center">Toolkit</h2>
-        <FcSettings className="icon-size" />
-        <FcSupport className="icon-size" />
-      </div>
-      <p className="max-w-sm mx-2 mb-2 text-center sm:max-w-xl text-lg">
-        I use a variety of tools to get through all the obstacles as efficiently
-        as possible. I really enjoy working with statically typed languages,
-        especially TypeScript. This negates most of the silly bugs that could
-        sneak into the codebase and creates a quick feedback loop to fix all the
-        little bugs as you write and refactor new code.
-      </p>
-      <div className="grid max-w-sm grid-cols-3 gap-4 p-3 rounded shadow-xl p--auto sm:grid-cols-4 sm:max-w-lg bg-slate-300 dark:bg-slate-700 text-slate-700 dark:text-slate-200">
-        <ToolkitItem id={1} name="NextJS" icon={SiNextdotjs} />
-        <ToolkitItem id={2} name="Neovim" icon={SiNeovim} />
-        <ToolkitItem id={3} name="TypeScript" icon={SiTypescript} />
-        <ToolkitItem id={4} name="JavaScript" icon={SiJavascript} />
-        <ToolkitItem id={5} name="React" icon={SiReact} />
-        <ToolkitItem id={6} name="Prettier" icon={SiPrettier} />
-        <ToolkitItem id={7} name="HTML5" icon={SiHtml5} />
-        <ToolkitItem id={8} name="Tailwindcss" icon={SiTailwindcss} />
-        <ToolkitItem id={9} name="CSS3" icon={SiCss3} />
-        <ToolkitItem id={10} name="Vercel" icon={SiVercel} />
-        <ToolkitItem id={11} name="Python" icon={SiPython} />
-        <ToolkitItem id={12} name="Git" icon={SiGit} />
-        <ToolkitItem id={13} name="Github" icon={SiGithub} />
-        <ToolkitItem id={14} name="Apollo" icon={SiApollographql} />
-        <ToolkitItem id={15} name="GraphQL" icon={SiGraphql} />
-        <ToolkitItem id={16} name="NestJS" icon={SiNestjs} />
-        <ToolkitItem id={17} name="Java" icon={SiJava} />
-        <ToolkitItem id={18} name="C++" icon={SiCplusplus} />
-        <ToolkitItem id={19} name="Heroku" icon={SiHeroku} />
-        <ToolkitItem id={20} name="Redux" icon={SiRedux} />
-        <ToolkitItem id={21} name="Chakra" icon={SiChakraui} />
-        <ToolkitItem id={22} name="MongoDB" icon={SiMongodb} />
-        <ToolkitItem id={23} name="Express" icon={SiExpress} />
-        <ToolkitItem id={24} name="NodeJS" icon={SiNodedotjs} />
-        <ToolkitItem id={25} name="MySQL" icon={SiMysql} />
-        <ToolkitItem id={26} name="Eslint" icon={SiEslint} />
-        <ToolkitItem id={27} name="PostgreSQL" icon={SiPostgresql} />
-        <ToolkitItem id={28} name="DynamoDB" icon={SiAmazondynamodb} />
-        <ToolkitItem id={29} name="Amplify" icon={SiAwsamplify} />
-        <ToolkitItem id={30} name="Sass" icon={SiSass} />
-        <ToolkitItem id={31} name="Docker" icon={SiDocker} />
-      </div>
-    </>
+    <Card className="w-[360px] md:w-[650px] mx-auto">
+      <CardContent className="grid grid-cols-3 place-content-between mt-4 gap-4">
+        <ToolkitItem name="NextJS" icon={SiNextdotjs} />
+        <ToolkitItem name="Neovim" icon={SiNeovim} />
+        <ToolkitItem name="TypeScript" icon={SiTypescript} />
+        <ToolkitItem name="JavaScript" icon={SiJavascript} />
+        <ToolkitItem name="React" icon={SiReact} />
+        <ToolkitItem name="Prettier" icon={SiPrettier} />
+        <ToolkitItem name="HTML5" icon={SiHtml5} />
+        <ToolkitItem name="Tailwindcss" icon={SiTailwindcss} />
+        <ToolkitItem name="CSS3" icon={SiCss3} />
+        <ToolkitItem name="Vercel" icon={SiVercel} />
+        <ToolkitItem name="Python" icon={SiPython} />
+        <ToolkitItem name="Git" icon={SiGit} />
+        <ToolkitItem name="Github" icon={SiGithub} />
+        <ToolkitItem name="Apollo" icon={SiApollographql} />
+        <ToolkitItem name="GraphQL" icon={SiGraphql} />
+        <ToolkitItem name="Redux" icon={SiRedux} />
+        <ToolkitItem name="MongoDB" icon={SiMongodb} />
+        <ToolkitItem name="Express" icon={SiExpress} />
+        <ToolkitItem name="NodeJS" icon={SiNodedotjs} />
+        <ToolkitItem name="MySQL" icon={SiMysql} />
+        <ToolkitItem name="Eslint" icon={SiEslint} />
+        <ToolkitItem name="Vite" icon={SiVite} />
+        <ToolkitItem name="DynamoDB" icon={SiAmazondynamodb} />
+        <ToolkitItem name="Amplify" icon={SiAwsamplify} />
+        <ToolkitItem name="Sass" icon={SiSass} />
+        <ToolkitItem name="Docker" icon={SiDocker} />
+        <ToolkitItem name="Lambda" icon={SiAwslambda} />
+        <ToolkitItem name="tRPC" icon={SiTrpc} />
+        <ToolkitItem name="Prisma" icon={SiPrisma} />
+        <ToolkitItem name="Jira" icon={SiJirasoftware} />
+        <ToolkitItem name="PostgreSQL" icon={SiPostgresql} />
+      </CardContent>
+    </Card>
   )
 }
 
 export default Toolkit
+
+const ToolkitItem = ({ name, icon }: { name: string; icon: IconType }) => {
+  const itemVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: (custom: number) => ({
+      opacity: 1,
+      transition: { delay: custom },
+    }),
+  }
+
+  const randomNumber = Math.floor(Math.random() * 32)
+
+  return (
+    <motion.div
+      variants={itemVariants}
+      initial="hidden"
+      animate="visible"
+      custom={randomNumber * 0.05}
+      className="flex space-x-2 justify-center items-center"
+      key={name}
+    >
+      <span>{icon({ className: "w-6 h-6" })}</span>
+      <p className="text-sm">{name}</p>
+    </motion.div>
+  )
+}
