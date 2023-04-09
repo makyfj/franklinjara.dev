@@ -9,6 +9,12 @@ import {
   CardHeader,
 } from "src/components/ui/card"
 import { Button } from "src/components/ui/button"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "src/components/ui/tooltip"
 
 export const metadata: Metadata = {
   title: "Franklin Jara | Projects",
@@ -69,26 +75,45 @@ const Page = async () => {
             </CardDescription>
             <CardContent className="custom-p">{repo.description}</CardContent>
             <CardFooter className="flex items-center justify-around gap-2">
-              <Button>
-                <a
-                  className="flex items-center gap-2"
-                  href={repo.website}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Demo <Link className="text-blue-400 h-4 w-4" />
-                </a>
-              </Button>
-              <Button>
-                <a
-                  className="flex items-center gap-2"
-                  href={repo.link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Source Code <Github className="text-blue-400 h-4 w-4" />
-                </a>
-              </Button>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button disabled={!repo.website}>
+                      <a
+                        className="flex items-center gap-2"
+                        href={repo.website}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Demo <Link className="text-blue-400 h-4 w-4" />
+                      </a>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p className="custom-p">View Demo</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <Button>
+                      <a
+                        className="flex items-center gap-2"
+                        href={repo.link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Source Code <Github className="text-blue-400 h-4 w-4" />
+                      </a>
+                    </Button>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p className="custom-p">View Source Code</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
             </CardFooter>
           </Card>
         ))}

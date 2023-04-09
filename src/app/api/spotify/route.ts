@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server"
+import { headers } from "next/headers"
 
 import { getNowPlaying } from "src/utils/spotify"
 
@@ -51,6 +51,9 @@ export async function GET() {
     }),
     {
       status: 200,
+      headers: {
+        cacheControl: "s-maxage=1, stale-while-revalidate",
+      },
     }
   )
 }
