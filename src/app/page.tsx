@@ -7,9 +7,8 @@ import Toolkit from "src/components/toolkit"
 import Spotify from "src/components/spotify"
 import { INowPlayingSong } from "@/utils/spotify"
 
-
 export default async function Home() {
-  const response = await fetch("http://localhost:3000/api/spotify", {
+  const response = await fetch(`${process.env.URL}/api/spotify`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
