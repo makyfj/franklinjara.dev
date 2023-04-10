@@ -33,8 +33,13 @@ export default async function Home() {
       />
       <h1 className="custom-h1 text-center">Franklin Jara</h1>
       <div className="flex items-center gap-2 justify-center">
-        <a href="https://github.com/makyfj" target="_blank" rel="noreferrer">
-          <Button variant="link">
+        <a
+          href="https://github.com/makyfj"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Github Repository"
+        >
+          <Button variant="link" aria-label="Github Link">
             <GithubIcon />
           </Button>
         </a>
@@ -42,8 +47,9 @@ export default async function Home() {
           href="https://www.linkedin.com/in/franklin-jara-fj/"
           target="_blank"
           rel="noreferrer"
+          aria-label="Linkedin Profile"
         >
-          <Button variant="link">
+          <Button variant="link" aria-label="Linkedin Link">
             <Linkedin />
           </Button>
         </a>
@@ -51,8 +57,9 @@ export default async function Home() {
           href="mailto:franklinjaradev@gmail.com"
           target="_blank"
           rel="noreferrer"
+          aria-label="Email Address"
         >
-          <Button variant="link">
+          <Button variant="link" aria-label="Email Link">
             <Mail />
           </Button>
         </a>

@@ -15,7 +15,7 @@ const Header = () => {
     <div className="flex items-center justify-around my-2">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="outline">
+          <Button variant="outline" aria-label="Menu">
             <Menu />
           </Button>
         </DropdownMenuTrigger>
