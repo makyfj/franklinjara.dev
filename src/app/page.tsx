@@ -1,4 +1,4 @@
-import { GithubIcon, Linkedin, Mail, Settings, Wrench } from "lucide-react"
+import { FileText, GithubIcon, Linkedin, Mail, Settings, Wrench } from "lucide-react"
 import Image from "next/image"
 import profilePic from "public/images/Franklin-min.png"
 
@@ -61,6 +61,16 @@ export default async function Home() {
         >
           <Button variant="link" aria-label="Email Link">
             <Mail />
+          </Button>
+        </a>
+        <a
+          href="files/FranklinJaraResume.pdf"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Franklin Jara Resume"
+        >
+          <Button variant="link" aria-label="Resume">
+            <FileText />
           </Button>
         </a>
       </div>
