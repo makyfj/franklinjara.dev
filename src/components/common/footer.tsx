@@ -6,7 +6,7 @@ const Footer = () => {
           <p className="text-center text-sm leading-loose text-slate-600 dark:text-slate-400 md:text-left">
             Built by{" "}
             <a
-              href="https://twitter.com/iwanttobeinmars"
+              href="https://github.com/makyfj"
               target="_blank"
               rel="noreferrer"
               className="font-medium underline underline-offset-4"
