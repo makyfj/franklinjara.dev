@@ -1,4 +1,11 @@
-import { FileText, GithubIcon, Linkedin, Mail, Settings, Wrench } from "lucide-react"
+import {
+  FileText,
+  GithubIcon,
+  Linkedin,
+  Mail,
+  Settings,
+  Wrench,
+} from "lucide-react"
 import Image from "next/image"
 import profilePic from "public/images/Franklin-min.png"
 
@@ -31,8 +38,8 @@ export default async function Home() {
         className="mx-auto"
         priority={true}
       />
-      <h1 className="custom-h1 text-center">Franklin Jara</h1>
-      <div className="flex items-center gap-2 justify-center">
+      <h1 className="text-center custom-h1">Franklin Jara</h1>
+      <div className="flex items-center justify-center gap-2">
         <a
           href="https://github.com/makyfj"
           target="_blank"
@@ -76,14 +83,12 @@ export default async function Home() {
       </div>
       <p className="mx-4 md:max-w-2xl md:mx-auto custom-p">
         <span className="font-bold">Software Engineer</span> @ Cherry Hill
-        Programs and <span className="font-bold">Graduate Student</span> @
-        Adelphi University pursuing a Master{`'`}s Degree in Computer Science
-        with specialization in Software Engineering. I find joy in coding,
-        working out, and listening to techno music. As a passionate Software
-        Engineer and driven individual, I strive to continuously push myself
-        beyond my limits and grow both professionally and personally every day.
+        Programs. I find joy in coding, working out, and listening to techno
+        music. As a passionate Software Engineer and driven individual, I strive
+        to continuously push myself beyond my limits and grow both
+        professionally and personally every day.
       </p>
-      <h2 className="custom-h2 flex gap-2 items-center justify-center">
+      <h2 className="flex items-center justify-center gap-2 custom-h2">
         Toolkit <Settings />
         <Wrench />
       </h2>
