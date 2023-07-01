@@ -15,8 +15,7 @@ const fontSans = FontSans({
 
 export const metadata: Metadata = {
   title: "Franklin Jara | Software Engineer",
-  description:
-    "Software Engineer @ Cherry Hill Programs and Graduate Student @ Adelphi University pursuing a Master's Degree in Computer Science with specialization in Software Engineering.",
+  description: "Software Engineer @ Cherry Hill Programs",
   metadataBase: new URL("https://franklinjara.dev"),
   generator: "Franklin Jara",
   applicationName: "Franklin Jara",
@@ -38,8 +37,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Franklin Jara | Software Engineer",
-    description:
-      "Software Engineer @ Cherry Hill Programs and Graduate Student @ Adelphi University pursuing a Master's Degree in Computer Science with specialization in Software Engineering.",
+    description: "Software Engineer @ Cherry Hill Programs",
     url: "https://franklinjara.dev",
     siteName: "Franklin Jara | Software Engineer",
     images: [
@@ -69,7 +67,7 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex min-h-screen flex-col gap-4">
+          <div className="flex flex-col min-h-screen gap-4">
             <Header />
             <div className="container flex-1 mx-auto">{children}</div>
             <Footer />
