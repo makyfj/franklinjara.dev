@@ -12,7 +12,7 @@
     "@headlessui/react": "^1.7.0",
     "@radix-ui/react-dropdown-menu": "^2.0.4",
     "@radix-ui/react-tooltip": "^1.0.5",
-    "class-variance-authority": "^0.5.1",
+    "class-variance-authority": "^0.6.1",
     "clsx": "^1.2.1",
     "framer-motion": "^10.11.2",
     "lucide-react": "^0.130.1",
