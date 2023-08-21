@@ -7,7 +7,6 @@ import {
   Wrench,
 } from "lucide-react"
 import Image from "next/image"
-import profilePic from "public/images/Franklin-min.png"
 
 import { Button } from "src/components/ui/button"
 import Toolkit from "src/components/toolkit"
@@ -30,12 +29,11 @@ export default async function Home() {
   return (
     <main className="flex flex-col gap-4">
       <Image
-        src={profilePic}
+        src="https://avatars.githubusercontent.com/u/65879341?v=4"
         width={200}
         height={200}
-        placeholder="blur"
         alt="Picture of the author"
-        className="mx-auto"
+        className="mx-auto rounded-full"
         priority={true}
       />
       <h1 className="text-center custom-h1">Franklin Jara</h1>

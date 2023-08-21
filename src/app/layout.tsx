@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     siteName: "Franklin Jara | Software Engineer",
     images: [
       {
-        url: "https://franklinjara.dev/images/Franklin-OG.jpeg",
+        url: "https://avatars.githubusercontent.com/u/65879341?v=4",
         width: 800,
         height: 600,
         alt: "Franklin Jara | Software Engineer",
