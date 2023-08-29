@@ -1,5 +1,6 @@
 import { Inter as FontSans } from "next/font/google"
 import { Metadata } from "next"
+import { Analytics } from "@vercel/analytics/react"
 
 import "../styles/tailwind.css"
 import Header from "src/components/common/header"
@@ -81,6 +82,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   )
