@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { cn } from "src/utils/tailwindcss"
+import { cn } from "src/lib/utils"
 
 const Card = React.forwardRef<
   HTMLDivElement,
@@ -8,7 +8,10 @@ const Card = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn("bg-background rounded-lg border shadow-sm", className)}
+    className={cn(
+      "rounded-xl border bg-card text-card-foreground shadow",
+      className
+    )}
     {...props}
   />
 ))
@@ -32,10 +35,7 @@ const CardTitle = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <h3
     ref={ref}
-    className={cn(
-      "text-foreground text-lg font-semibold leading-none tracking-tight",
-      className
-    )}
+    className={cn("font-semibold leading-none tracking-tight", className)}
     {...props}
   />
 ))
@@ -47,7 +47,7 @@ const CardDescription = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <p
     ref={ref}
-    className={cn("text-muted-foreground text-sm", className)}
+    className={cn("text-sm text-muted-foreground", className)}
     {...props}
   />
 ))
@@ -67,7 +67,7 @@ const CardFooter = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <div
     ref={ref}
-    className={cn(" flex items-center p-6 pt-0", className)}
+    className={cn("flex items-center p-6 pt-0", className)}
     {...props}
   />
 ))

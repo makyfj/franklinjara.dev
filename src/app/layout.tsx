@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react"
 
 import "../styles/tailwind.css"
 import Header from "src/components/common/header"
-import { cn } from "src/utils/tailwindcss"
+import { cn } from "src/lib/utils"
 import ThemeProvider from "src/components/theme-provider"
 import Footer from "src/components/common/footer"
 
@@ -71,7 +71,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-white font-sans text-slate-900 antialiased dark:bg-slate-900 dark:text-slate-50",
+          "min-h-screen font-sans antialiased dark:bg-stone-900 bg-stone-100 text-black dark:text-white",
           fontSans.variable
         )}
       >

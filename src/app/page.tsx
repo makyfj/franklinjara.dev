@@ -10,22 +10,9 @@ import Image from "next/image"
 
 import { Button } from "src/components/ui/button"
 import Toolkit from "src/components/toolkit"
-import Spotify from "src/components/spotify"
-import { INowPlayingSong } from "src/utils/spotify"
+import { Card, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default async function Home() {
-  const response = await fetch(`${process.env.URL}/api/spotify`, {
-    method: "GET",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    next: {
-      revalidate: 5,
-    },
-  })
-
-  const data: INowPlayingSong = await response.json()
-
   return (
     <main className="flex flex-col gap-4">
       <Image
@@ -79,18 +66,21 @@ export default async function Home() {
           </Button>
         </a>
       </div>
-      <p className="mx-4 md:max-w-2xl md:mx-auto custom-p">
+      <p className="mx-4 md:max-w-2xl md:mx-auto">
         <span className="font-bold">Software Engineer</span> @ Cherry Hill
         Programs. I find joy in coding, working out, and listening to techno
         music. As a passionate Software Engineer and driven individual, I strive
         to continuously push myself beyond my limits and grow both
         professionally and personally every day.
       </p>
-      <h2 className="flex items-center justify-center gap-2 custom-h2">
-        Toolkit <Settings />
-        <Wrench />
-      </h2>
-      <p className="mx-4 md:max-w-2xl md:mx-auto custom-p">
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center justify-center gap-2 custom-h2">
+            Toolkit <Settings /> <Wrench />
+          </CardTitle>
+        </CardHeader>
+      </Card>
+      <p className="mx-4 md:max-w-2xl md:mx-auto">
         As a Software Engineer, I am well-versed in a variety of tools to
         overcome obstacles with maximum efficiency. TypeScript is one of my
         favorite statically typed languages to work with, as it significantly
@@ -98,7 +88,6 @@ export default async function Home() {
         loop for debugging during code writing and refactoring.
       </p>
       <Toolkit />
-      <Spotify data={data} />
     </main>
   )
 }

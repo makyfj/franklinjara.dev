@@ -12,7 +12,7 @@ const Footer = () => {
               className="font-medium underline underline-offset-4"
             >
               Franklin
-            </a> {" "}
+            </a>{" "}
             and the source code is available on{" "}
             <a
               href="https://github.com/makyfj/franklinjara.dev"
