@@ -40,7 +40,7 @@ import { CardContent } from "./ui/card"
 
 const Toolkit = () => {
   return (
-    <CardContent className="grid grid-cols-3 place-content-between mt-4 gap-4">
+    <CardContent className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 place-content-between gap-4">
       <ToolkitItem name="NextJS" icon={SiNextdotjs} />
       <ToolkitItem name="Neovim" icon={SiNeovim} />
       <ToolkitItem name="TypeScript" icon={SiTypescript} />
