@@ -16,7 +16,13 @@ import { ModeToggle } from "../mode-toggle"
 const Header = () => {
   const { innerWidth } = useWindowSize()
   return (
-    <div className={`flex items-center my-2 ${innerWidth && innerWidth <= 768 ? "justify-around" : "justify-center gap-8"}`}>
+    <div
+      className={`flex items-center my-2 ${
+        innerWidth && innerWidth <= 768
+          ? "justify-around"
+          : "justify-center gap-8"
+      }`}
+    >
       {innerWidth && innerWidth <= 768 ? (
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
