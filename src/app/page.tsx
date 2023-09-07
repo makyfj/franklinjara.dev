@@ -29,7 +29,7 @@ export default async function Home() {
         className="mx-auto rounded-full"
         priority={true}
       />
-      <Card className="border-0 shadow-none">
+      <Card>
         <CardHeader>
           <CardTitle className="custom-h1 text-center">Franklin Jara</CardTitle>
           <CardDescription>

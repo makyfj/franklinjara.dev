@@ -47,7 +47,7 @@ const Page = async () => {
 
   return (
     <main className="flex flex-col gap-4">
-      <Card className="border-0 shadow-none">
+      <Card>
         <CardHeader>
           <CardTitle className="custom-h1 justify-center flex items-center gap-2">
             Projects
