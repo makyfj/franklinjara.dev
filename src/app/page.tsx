@@ -52,16 +52,6 @@ export default async function Home() {
             </Button>
           </a>
           <a
-            href="https://www.linkedin.com/in/franklin-jara-fj/"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Linkedin Profile"
-          >
-            <Button variant="link" aria-label="Linkedin Link">
-              <Linkedin />
-            </Button>
-          </a>
-          <a
             href="mailto:franklinjaradev@gmail.com"
             target="_blank"
             rel="noreferrer"
@@ -69,16 +59,6 @@ export default async function Home() {
           >
             <Button variant="link" aria-label="Email Link">
               <Mail />
-            </Button>
-          </a>
-          <a
-            href="files/FranklinJaraResume.pdf"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Franklin Jara Resume"
-          >
-            <Button variant="link" aria-label="Resume">
-              <FileText />
             </Button>
           </a>
         </CardFooter>
