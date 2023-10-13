@@ -1,11 +1,4 @@
-import {
-  FileText,
-  GithubIcon,
-  Linkedin,
-  Mail,
-  Settings,
-  Wrench,
-} from "lucide-react"
+import { GithubIcon, Mail, Settings, Wrench } from "lucide-react"
 import Image from "next/image"
 
 import { Button } from "src/components/ui/button"
