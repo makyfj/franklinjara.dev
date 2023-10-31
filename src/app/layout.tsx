@@ -1,5 +1,5 @@
 import { Inter as FontSans } from "next/font/google"
-import { Metadata } from "next"
+import { Metadata, Viewport } from "next"
 import { Analytics } from "@vercel/analytics/react"
 
 import "../styles/tailwind.css"
@@ -13,6 +13,14 @@ const fontSans = FontSans({
   variable: "--font-sans",
   display: "swap",
 })
+
+export const viewport: Viewport = {
+  colorScheme: "light dark",
+  width: "device-width",
+  initialScale: 1,
+  minimumScale: 1,
+  maximumScale: 1,
+}
 
 export const metadata: Metadata = {
   title: "Franklin Jara | Software Engineer",
@@ -28,7 +36,6 @@ export const metadata: Metadata = {
     "Coding",
   ],
   authors: [{ name: "Franklin Jara", url: "https://github.com/makyfj" }],
-  colorScheme: "dark",
   creator: "Franklin Jara",
   publisher: "Franklin Jara",
   formatDetection: {
