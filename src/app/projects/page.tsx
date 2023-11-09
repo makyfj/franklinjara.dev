@@ -1,6 +1,7 @@
-import { Metadata } from "next"
 import { ClipboardList, Github, Link, Star } from "lucide-react"
+import { Metadata } from "next"
 
+import { Button } from "src/components/ui/button"
 import {
   Card,
   CardContent,
@@ -9,7 +10,6 @@ import {
   CardHeader,
   CardTitle,
 } from "src/components/ui/card"
-import { Button } from "src/components/ui/button"
 import {
   Tooltip,
   TooltipContent,

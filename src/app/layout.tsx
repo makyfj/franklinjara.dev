@@ -1,18 +1,14 @@
 import { Inter as FontSans } from "next/font/google"
 import { Metadata, Viewport } from "next"
 import { Analytics } from "@vercel/analytics/react"
+import { GeistSans } from "geist/font/sans"
 
 import "../styles/tailwind.css"
 import Header from "src/components/common/header"
 import { cn } from "src/lib/utils"
 import ThemeProvider from "src/components/theme-provider"
 import Footer from "src/components/common/footer"
-
-const fontSans = FontSans({
-  subsets: ["latin"],
-  variable: "--font-sans",
-  display: "swap",
-})
+import Background from "@/components/bg"
 
 export const viewport: Viewport = {
   colorScheme: "light dark",
@@ -75,19 +71,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={cn(
-          "min-h-screen font-sans antialiased bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-neutral-100 via-neutral-300 to-neutral-400 dark:from-neutral-800 dark:via-neutral-950 dark:to-neutral-800",
-          fontSans.variable
-        )}
-      >
+    <html lang="en" suppressHydrationWarning className={GeistSans.className}>
+      <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex flex-col min-h-screen gap-4">
-            <Header />
-            <div className="container flex-1 mx-auto">{children}</div>
-            <Footer />
-          </div>
+          <Background>
+            <div className="flex flex-col gap-4 min-h-screen">{children}</div>
+          </Background>
         </ThemeProvider>
         <Analytics />
       </body>

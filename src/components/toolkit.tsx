@@ -5,72 +5,48 @@ import { motion } from "framer-motion"
 
 import {
   SiNextdotjs,
-  SiNeovim,
   SiTypescript,
   SiJavascript,
   SiReact,
-  SiPrettier,
-  SiHtml5,
   SiTailwindcss,
-  SiCss3,
-  SiVercel,
   SiPython,
-  SiRedux,
   SiMongodb,
-  SiExpress,
   SiNodedotjs,
   SiMysql,
   SiPostgresql,
   SiGraphql,
-  SiApollographql,
   SiGithub,
   SiGit,
-  SiEslint,
-  SiAmazondynamodb,
   SiAwsamplify,
-  SiSass,
   SiDocker,
   SiAwslambda,
   SiTrpc,
-  SiPrisma,
-  SiJirasoftware,
-  SiVite,
+  SiGo,
+  SiRust,
 } from "react-icons/si"
 import { CardContent } from "./ui/card"
 
 const Toolkit = () => {
   return (
-    <CardContent className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 place-content-between gap-4">
+    <CardContent className="grid grid-cols-2 md:grid-cols-3 place-content-between gap-4">
       <ToolkitItem name="NextJS" icon={SiNextdotjs} />
-      <ToolkitItem name="Neovim" icon={SiNeovim} />
       <ToolkitItem name="TypeScript" icon={SiTypescript} />
       <ToolkitItem name="JavaScript" icon={SiJavascript} />
+      <ToolkitItem name="Go" icon={SiGo} />
+      <ToolkitItem name="Rust" icon={SiRust} />
       <ToolkitItem name="React" icon={SiReact} />
-      <ToolkitItem name="Prettier" icon={SiPrettier} />
-      <ToolkitItem name="HTML5" icon={SiHtml5} />
       <ToolkitItem name="Tailwindcss" icon={SiTailwindcss} />
-      <ToolkitItem name="CSS3" icon={SiCss3} />
-      <ToolkitItem name="Vercel" icon={SiVercel} />
       <ToolkitItem name="Python" icon={SiPython} />
       <ToolkitItem name="Git" icon={SiGit} />
       <ToolkitItem name="Github" icon={SiGithub} />
-      <ToolkitItem name="Apollo" icon={SiApollographql} />
       <ToolkitItem name="GraphQL" icon={SiGraphql} />
-      <ToolkitItem name="Redux" icon={SiRedux} />
       <ToolkitItem name="MongoDB" icon={SiMongodb} />
-      <ToolkitItem name="Express" icon={SiExpress} />
       <ToolkitItem name="NodeJS" icon={SiNodedotjs} />
       <ToolkitItem name="MySQL" icon={SiMysql} />
-      <ToolkitItem name="Eslint" icon={SiEslint} />
-      <ToolkitItem name="Vite" icon={SiVite} />
-      <ToolkitItem name="DynamoDB" icon={SiAmazondynamodb} />
       <ToolkitItem name="Amplify" icon={SiAwsamplify} />
-      <ToolkitItem name="Sass" icon={SiSass} />
       <ToolkitItem name="Docker" icon={SiDocker} />
       <ToolkitItem name="Lambda" icon={SiAwslambda} />
       <ToolkitItem name="tRPC" icon={SiTrpc} />
-      <ToolkitItem name="Prisma" icon={SiPrisma} />
-      <ToolkitItem name="Jira" icon={SiJirasoftware} />
       <ToolkitItem name="PostgreSQL" icon={SiPostgresql} />
     </CardContent>
   )
