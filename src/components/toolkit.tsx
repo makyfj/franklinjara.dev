@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 
 import {
   SiNextdotjs,
+  SiNeovim,
   SiTypescript,
   SiJavascript,
   SiReact,
@@ -17,23 +18,26 @@ import {
   SiGraphql,
   SiGithub,
   SiGit,
+  SiAmazondynamodb,
   SiAwsamplify,
   SiDocker,
   SiAwslambda,
   SiTrpc,
-  SiGo,
+  SiVite,
   SiRust,
+  SiGo,
 } from "react-icons/si"
-import { CardContent } from "./ui/card"
+import { Card, CardContent } from "./ui/card"
 
 const Toolkit = () => {
   return (
-    <CardContent className="grid grid-cols-2 md:grid-cols-3 place-content-between gap-4">
+    <CardContent className="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-7 place-content-between mt-4 gap-4">
       <ToolkitItem name="NextJS" icon={SiNextdotjs} />
+      <ToolkitItem name="Neovim" icon={SiNeovim} />
       <ToolkitItem name="TypeScript" icon={SiTypescript} />
       <ToolkitItem name="JavaScript" icon={SiJavascript} />
-      <ToolkitItem name="Go" icon={SiGo} />
       <ToolkitItem name="Rust" icon={SiRust} />
+      <ToolkitItem name="Go" icon={SiGo} />
       <ToolkitItem name="React" icon={SiReact} />
       <ToolkitItem name="Tailwindcss" icon={SiTailwindcss} />
       <ToolkitItem name="Python" icon={SiPython} />
@@ -43,6 +47,8 @@ const Toolkit = () => {
       <ToolkitItem name="MongoDB" icon={SiMongodb} />
       <ToolkitItem name="NodeJS" icon={SiNodedotjs} />
       <ToolkitItem name="MySQL" icon={SiMysql} />
+      <ToolkitItem name="Vite" icon={SiVite} />
+      <ToolkitItem name="DynamoDB" icon={SiAmazondynamodb} />
       <ToolkitItem name="Amplify" icon={SiAwsamplify} />
       <ToolkitItem name="Docker" icon={SiDocker} />
       <ToolkitItem name="Lambda" icon={SiAwslambda} />

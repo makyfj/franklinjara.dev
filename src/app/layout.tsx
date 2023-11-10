@@ -1,13 +1,9 @@
-import { Inter as FontSans } from "next/font/google"
 import { Metadata, Viewport } from "next"
 import { Analytics } from "@vercel/analytics/react"
 import { GeistSans } from "geist/font/sans"
 
 import "../styles/tailwind.css"
-import Header from "src/components/common/header"
-import { cn } from "src/lib/utils"
 import ThemeProvider from "src/components/theme-provider"
-import Footer from "src/components/common/footer"
 import Background from "@/components/bg"
 
 export const viewport: Viewport = {
@@ -19,8 +15,9 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: "Franklin Jara | Software Engineer",
-  description: "Software Engineer @ Cherry Hill Programs",
+  title: "Franklin Jara",
+  description:
+    "Software Engineer with a passion for techno music and a groove for coding",
   metadataBase: new URL("https://franklinjara.dev"),
   generator: "Franklin Jara",
   applicationName: "Franklin Jara",
@@ -39,17 +36,19 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  twitter: {},
   openGraph: {
     title: "Franklin Jara | Software Engineer",
-    description: "Software Engineer @ Cherry Hill Programs",
+    description:
+      "Software Engineer with a passion for techno music and a groove for coding",
     url: "https://franklinjara.dev",
-    siteName: "Franklin Jara | Software Engineer",
+    siteName: "Franklin Jara",
     images: [
       {
         url: "https://avatars.githubusercontent.com/u/65879341?v=4",
         width: 800,
         height: 600,
-        alt: "Franklin Jara | Software Engineer",
+        alt: "Franklin Jara",
       },
     ],
     locale: "en-US",
@@ -75,7 +74,9 @@ export default function RootLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Background>
-            <div className="flex flex-col gap-4 min-h-screen">{children}</div>
+            <div className="min-h-screen flex flex-col items-center justify-center gap-4 container my-4">
+              {children}
+            </div>
           </Background>
         </ThemeProvider>
         <Analytics />
