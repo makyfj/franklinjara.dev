@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Franklin Jara",
     images: [
       {
-        url: "https://avatars.githubusercontent.com/u/65879341?v=4",
+        url: "https://franklinjara.dev/img/Volg.jpeg",
         width: 800,
         height: 600,
         alt: "Franklin Jara",
