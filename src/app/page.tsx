@@ -1,7 +1,6 @@
 import { GithubIcon, Mail, Settings, Wrench } from "lucide-react"
 import Image from "next/image"
 
-import { Button } from "src/components/ui/button"
 import Toolkit from "src/components/toolkit"
 import {
   Card,
@@ -14,8 +13,8 @@ import { ModeToggle } from "@/components/mode-toggle"
 
 export default async function Home() {
   return (
-    <main className="flex flex-col gap-4">
-      <div className="flex flex-col gap-4 md:flex-row md:justify-center md:gap-1">
+    <main className="flex flex-col gap-4 md:gap-2">
+      <div className="flex flex-col gap-4 md:flex-row md:justify-center md:gap-2">
         <Card className="transition-color duration-300 hover:border-foreground md:w-2/5">
           <CardHeader>
             <CardTitle>
@@ -61,9 +60,7 @@ export default async function Home() {
               aria-label="Github Repository"
               className="border rounded-xl p-4 transition-color duration-300 hover:border-foreground"
             >
-              <Button variant="link" aria-label="Github Link">
-                <GithubIcon className="text-2xl" />
-              </Button>
+              <GithubIcon className="text-2xl" />
             </a>
             <a
               href="mailto:franklinjaradev@gmail.com"
@@ -72,9 +69,7 @@ export default async function Home() {
               aria-label="Email Address"
               className="border rounded-xl p-4 transition-color duration-300 hover:border-foreground"
             >
-              <Button variant="link" aria-label="Email Link">
-                <Mail className="text-2xl" />
-              </Button>
+              <Mail className="text-2xl" />
             </a>
             <ModeToggle />
           </CardFooter>
