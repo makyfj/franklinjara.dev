@@ -19,9 +19,9 @@ export default async function Home() {
           <CardHeader>
             <CardTitle>
               <Image
-                src="https://avatars.githubusercontent.com/u/65879341?v=4"
-                width={80}
-                height={80}
+                src="/img/Franklin.png"
+                width={110}
+                height={110}
                 alt="Picture of the author"
                 className="mx-auto rounded-full"
                 priority={true}
