@@ -23,7 +23,7 @@ export default async function Home() {
                 width={110}
                 height={110}
                 alt="Picture of the author"
-                className="mx-auto rounded-full"
+                className="mx-auto"
                 priority={true}
               />
             </CardTitle>
@@ -39,7 +39,7 @@ export default async function Home() {
             </CardDescription>
           </CardHeader>
         </Card>
-        <Card className="transition-color duration-300 hover:border-foreground md:w-2/5">
+        <Card className="transition-color duration-300 hover:border-foreground md:w-2/5 md:flex md:justify-between md:flex-col">
           <CardHeader>
             <CardTitle className="flex items-center justify-center gap-2 custom-h3">
               Toolkit <Settings /> <Wrench />
