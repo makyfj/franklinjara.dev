@@ -36,11 +36,23 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  twitter: {},
-  openGraph: {
-    title: "Franklin Jara | Software Engineer",
+  twitter: {
+    title: "Franklin Jara",
     description:
-      "Software Engineer with a passion for techno music and a groove for coding",
+      "Software Engineer with a passion for coding and grooving to some techno beats",
+    images: [
+      {
+        url: "https://franklinjara.dev/img/SF-BladeRunner.png",
+        width: 800,
+        height: 600,
+        alt: "Franklin Jara",
+      },
+    ],
+  },
+  openGraph: {
+    title: "Franklin Jara",
+    description:
+      "Software Engineer with a passion for coding and grooving to some techno beats",
     url: "https://franklinjara.dev",
     siteName: "Franklin Jara",
     images: [
@@ -74,7 +86,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Background>
-            <div className="min-h-screen flex flex-col items-center justify-center gap-4 container my-4">
+            <div className="container flex flex-col items-center justify-center min-h-screen gap-4 my-4">
               {children}
             </div>
           </Background>
