@@ -12,10 +12,11 @@ import {
 import { ModeToggle } from "@/components/mode-toggle"
 
 export default async function Home() {
+
   return (
     <main className="flex flex-col gap-4 md:gap-2">
       <div className="flex flex-col gap-4 md:flex-row md:justify-center md:gap-2">
-        <Card className="transition-color duration-300 hover:border-foreground md:w-2/5">
+        <Card className="duration-300 transition-color hover:border-foreground md:w-2/5">
           <CardHeader>
             <CardTitle>
               <Image
@@ -27,7 +28,7 @@ export default async function Home() {
                 priority={true}
               />
             </CardTitle>
-            <CardTitle className="custom-h3 text-center">
+            <CardTitle className="text-center custom-h3">
               Franklin Jara
             </CardTitle>
             <CardDescription className="text-center">
@@ -39,7 +40,7 @@ export default async function Home() {
             </CardDescription>
           </CardHeader>
         </Card>
-        <Card className="transition-color duration-300 hover:border-foreground md:w-2/5 md:flex md:justify-between md:flex-col">
+        <Card className="duration-300 transition-color hover:border-foreground md:w-2/5 md:flex md:justify-between md:flex-col">
           <CardHeader>
             <CardTitle className="flex items-center justify-center gap-2 custom-h3">
               Toolkit <Settings /> <Wrench />
@@ -52,13 +53,13 @@ export default async function Home() {
               development and refactoring.
             </CardDescription>
           </CardHeader>
-          <CardFooter className="flex justify-around items-center gap-2">
+          <CardFooter className="flex items-center justify-around gap-2">
             <a
               href="https://github.com/makyfj"
               target="_blank"
               rel="noreferrer"
               aria-label="Github Repository"
-              className="border rounded-xl p-4 transition-color duration-300 hover:border-foreground"
+              className="p-4 duration-300 border rounded-xl transition-color hover:border-foreground"
             >
               <GithubIcon className="text-2xl" />
             </a>
@@ -67,7 +68,7 @@ export default async function Home() {
               target="_blank"
               rel="noreferrer"
               aria-label="Email Address"
-              className="border rounded-xl p-4 transition-color duration-300 hover:border-foreground"
+              className="p-4 duration-300 border rounded-xl transition-color hover:border-foreground"
             >
               <Mail className="text-2xl" />
             </a>
@@ -75,7 +76,7 @@ export default async function Home() {
           </CardFooter>
         </Card>
       </div>
-      <Card className="pt-4 transition-color duration-300 hover:border-foreground md:w-4/5 md:mx-auto">
+      <Card className="pt-4 duration-300 transition-color hover:border-foreground md:w-4/5 md:mx-auto">
         <Toolkit />
       </Card>
     </main>
