@@ -24,10 +24,8 @@ import {
   SiAwslambda,
   SiTrpc,
   SiVite,
-  SiRust,
-  SiGo,
 } from "react-icons/si"
-import { Card, CardContent } from "./ui/card"
+import { CardContent } from "./ui/card"
 
 const Toolkit = () => {
   return (
@@ -36,8 +34,6 @@ const Toolkit = () => {
       <ToolkitItem name="Neovim" icon={SiNeovim} />
       <ToolkitItem name="TypeScript" icon={SiTypescript} />
       <ToolkitItem name="JavaScript" icon={SiJavascript} />
-      <ToolkitItem name="Rust" icon={SiRust} />
-      <ToolkitItem name="Go" icon={SiGo} />
       <ToolkitItem name="React" icon={SiReact} />
       <ToolkitItem name="Tailwindcss" icon={SiTailwindcss} />
       <ToolkitItem name="Python" icon={SiPython} />
