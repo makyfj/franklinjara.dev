@@ -42,7 +42,7 @@ export const metadata: Metadata = {
       "Software Engineer with a passion for coding and grooving to some techno beats",
     images: [
       {
-        url: "https://franklinjara.dev/img/SF-BladeRunner.png",
+        url: "https://franklinjara.dev/img/Dimmer.jpeg",
         width: 800,
         height: 600,
         alt: "Franklin Jara",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     siteName: "Franklin Jara",
     images: [
       {
-        url: "https://franklinjara.dev/img/SF-BladeRunner.png",
+        url: "https://franklinjara.dev/img/Dimmer.jpeg",
         width: 800,
         height: 600,
         alt: "Franklin Jara",
