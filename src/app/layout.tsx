@@ -1,6 +1,7 @@
 import { Metadata, Viewport } from "next"
 import { Analytics } from "@vercel/analytics/react"
 import { GeistSans } from "geist/font/sans"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import "../styles/tailwind.css"
 import ThemeProvider from "src/components/theme-provider"
@@ -85,6 +86,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={GeistSans.className}>
       <body>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <SpeedInsights />
           <Background>
             <div className="container flex flex-col items-center justify-center min-h-screen gap-4 my-4">
               {children}
