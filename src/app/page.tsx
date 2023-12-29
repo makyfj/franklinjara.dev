@@ -1,7 +1,6 @@
 import { GithubIcon, Mail, Settings, Wrench } from "lucide-react"
 import Image from "next/image"
 
-import Toolkit from "src/components/toolkit"
 import {
   Card,
   CardDescription,
@@ -12,11 +11,10 @@ import {
 import { ModeToggle } from "@/components/mode-toggle"
 
 export default async function Home() {
-
   return (
     <main className="flex flex-col gap-4 md:gap-2">
-      <div className="flex flex-col gap-4 md:flex-row md:justify-center md:gap-2">
-        <Card className="duration-300 transition-color hover:border-foreground md:w-2/5">
+      <div className="flex flex-col gap-4 justify-center items-center">
+        <Card className="duration-300 transition-color hover:border-foreground md:w-2/5 border-0">
           <CardHeader>
             <CardTitle>
               <Image
@@ -40,7 +38,7 @@ export default async function Home() {
             </CardDescription>
           </CardHeader>
         </Card>
-        <Card className="duration-300 transition-color hover:border-foreground md:w-2/5 md:flex md:justify-between md:flex-col">
+        <Card className="duration-300 transition-color hover:border-foreground md:w-2/5 md:flex md:justify-between md:flex-col border-0">
           <CardHeader>
             <CardTitle className="flex items-center justify-center gap-2 custom-h3">
               Toolkit <Settings /> <Wrench />
@@ -76,9 +74,6 @@ export default async function Home() {
           </CardFooter>
         </Card>
       </div>
-      <Card className="pt-4 duration-300 transition-color hover:border-foreground md:w-4/5 md:mx-auto">
-        <Toolkit />
-      </Card>
     </main>
   )
 }
