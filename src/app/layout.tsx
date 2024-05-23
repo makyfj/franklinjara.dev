@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: "Franklin Jara",
   description:
     "Software Engineer with a passion for techno music and a groove for coding",
-  metadataBase: new URL("https://franklinjara.dev"),
+  metadataBase: new URL("https://franklinj.dev"),
   generator: "Franklin Jara",
   applicationName: "Franklin Jara",
   keywords: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       "Software Engineer with a passion for coding and grooving to some techno beats",
     images: [
       {
-        url: "https://franklinjara.dev/img/Dimmer.jpeg",
+        url: "https://franklinj.dev/img/Dimmer.jpeg",
         width: 800,
         height: 600,
         alt: "Franklin Jara",
@@ -54,11 +54,11 @@ export const metadata: Metadata = {
     title: "Franklin Jara",
     description:
       "Software Engineer with a passion for coding and grooving to some techno beats",
-    url: "https://franklinjara.dev",
+    url: "https://franklinj.dev",
     siteName: "Franklin Jara",
     images: [
       {
-        url: "https://franklinjara.dev/img/Dimmer.jpeg",
+        url: "https://franklinj.dev/img/Dimmer.jpeg",
         width: 800,
         height: 600,
         alt: "Franklin Jara",
