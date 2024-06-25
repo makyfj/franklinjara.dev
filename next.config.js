@@ -12,6 +12,11 @@ const nextConfig = {
         protocol: "https",
         hostname: "avatars.githubusercontent.com",
       },
+      {
+        hostname: "starlit-ai.com",
+        protocol: "https",
+        port: "",
+      },
     ],
   },
 }

@@ -3,12 +3,14 @@ import Image from "next/image"
 
 import {
   Card,
+  CardContent,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "src/components/ui/card"
 import { ModeToggle } from "@/components/mode-toggle"
+import { Button } from "@/components/ui/button"
 
 export default async function Home() {
   return (
@@ -71,6 +73,36 @@ export default async function Home() {
               <Mail className="text-2xl" />
             </a>
             <ModeToggle />
+          </CardFooter>
+        </Card>
+        <Card className="duration-300 transition-color hover:border-foreground md:w-2/5 md:flex md:justify-between md:flex-col border-0">
+          <CardHeader>
+            <CardTitle className="flex items-center justify-center gap-2 custom-h3">
+              Starlit AI
+            </CardTitle>
+            <CardDescription>
+              DALL-E-powered image generator creates visuals from user prompts,
+              featuring a community gallery, and credit system.
+            </CardDescription>
+          </CardHeader>
+          <CardContent>
+            <Image
+              src="https://starlit-ai.com/assets/img/og.png"
+              alt="Starlit AI Logo"
+              width={400}
+              height={400}
+              className="w-full rounded"
+            />
+          </CardContent>
+          <CardFooter>
+            <a
+              href="https://starlit-ai.com"
+              target="_blank"
+              rel="noreferrer"
+              className="w-full"
+            >
+              <Button className="w-full">Check out my latest project 🚀</Button>
+            </a>
           </CardFooter>
         </Card>
       </div>
