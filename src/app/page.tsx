@@ -101,7 +101,9 @@ export default async function Home() {
               rel="noreferrer"
               className="w-full"
             >
-              <Button className="w-full">Check out my latest project 🚀</Button>
+              <Button variant={"outline"} className="w-full">
+                Check out my latest project 🚀
+              </Button>
             </a>
           </CardFooter>
         </Card>
