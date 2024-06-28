@@ -1,4 +1,4 @@
-import { GithubIcon, Mail, Settings, Wrench } from "lucide-react"
+import { FileText, GithubIcon, Mail, Settings, Wrench } from "lucide-react"
 import Image from "next/image"
 
 import {
@@ -71,6 +71,15 @@ export default async function Home() {
               className="p-4 duration-300 border rounded-xl transition-color hover:border-foreground"
             >
               <Mail className="text-2xl" />
+            </a>
+            <a
+              href="/files/Franklin_Jara_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Email Address"
+              className="p-4 duration-300 border rounded-xl transition-color hover:border-foreground"
+            >
+              <FileText className="text-2xl" />
             </a>
             <ModeToggle />
           </CardFooter>
