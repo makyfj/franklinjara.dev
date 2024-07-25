@@ -20,11 +20,11 @@ export default async function Home() {
           <CardHeader>
             <CardTitle>
               <Image
-                src="/img/Dimmer.jpeg"
-                width={110}
-                height={110}
+                src="/img/Volg.png"
+                width={400}
+                height={400}
                 alt="Picture of the author"
-                className="mx-auto rounded-full"
+                className="mx-auto rounded"
                 priority={true}
               />
             </CardTitle>
