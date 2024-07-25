@@ -96,7 +96,7 @@ export default async function Home() {
           </CardHeader>
           <CardContent>
             <Image
-              src="https://starlit-ai.com/assets/img/og.png"
+              src="/img/starlit-ai.png"
               alt="Starlit AI Logo"
               width={400}
               height={400}
