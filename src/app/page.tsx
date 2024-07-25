@@ -100,6 +100,7 @@ export default async function Home() {
               alt="Starlit AI Logo"
               width={400}
               height={400}
+              priority={true}
               className="w-full rounded"
             />
           </CardContent>
