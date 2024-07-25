@@ -20,7 +20,7 @@ export default async function Home() {
           <CardHeader>
             <CardTitle>
               <Image
-                src="/img/Volg.png"
+                src="/img/volg.png"
                 width={400}
                 height={400}
                 alt="Picture of the author"
